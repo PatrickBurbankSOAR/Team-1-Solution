@@ -13,7 +13,6 @@ import { SubmitIdeaPageComponent } from './components/submit-idea-page/submit-id
 import { AddRegistrationComponent } from './components/Register-Page/add-registration/add-registration.component';
 import { } from '@angular/core'
 
-
 @NgModule({
   declarations: [
     AppComponent,
