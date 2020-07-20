@@ -1,1 +1,44 @@
-<p>profile-page works!</p>
+<h1>Profile Page</h1>
+<h2>{{user.name | uppercase}} </h2>
+
+<div>
+    <label>name:
+        <input [(ngModel)]="user.name" placeholder="name" />
+    </label>
+</div>
+
+<div>
+    <label>email:
+        <input [(ngModel)]="user.email" placeholder="email" />
+    </label>
+</div>
+
+<div>
+    <label>email:
+        <input [(ngModel)]="user.email" placeholder="email" />
+    </label>
+</div>
+
+<div>
+    <label>phone:
+        <input [(ngModel)]="user.phone" placeholder="phone" />
+    </label>
+</div>
+
+<div>
+    <label>bio:
+        <input [(ngModel)]="user.bio" placeholder="Type bio here" />
+    </label>
+</div>
+
+<div>
+    <label>Created Ideas:
+        <input [(ngModel)]="user.createdIdeas" placeholder="Created Ideas" />
+    </label>
+</div>
+
+<div>
+    <label>Liked Ideas:
+        <input [(ngModel)]="user.likedIdeas" placeholder="Liked Ideas" />
+    </label>
+</div>
