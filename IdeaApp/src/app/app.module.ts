@@ -12,7 +12,6 @@ import { IdeaCardComponent } from './components/idea-card/idea-card.component';
 import { SubmitIdeaPageComponent } from './components/submit-idea-page/submit-idea-page.component';
 import { AddRegistrationComponent } from './components/Register-Page/add-registration/add-registration.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
