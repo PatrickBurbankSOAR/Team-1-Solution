@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//import { AddRegistration } from './add-registration/add-registration.component';
 
 @Component({
   selector: 'app-register-page',
