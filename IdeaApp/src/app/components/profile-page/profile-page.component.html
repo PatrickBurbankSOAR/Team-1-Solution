@@ -1,36 +1,60 @@
-<h1>Profile Page</h1>
-<h2>{{user.name | uppercase}} </h2>
+<head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
 
-<div>
-    <label>name:
-        <input [(ngModel)]="user.name" placeholder="name" />
-    </label>
-</div>
+<body>
 
-<div>
-    <label>email:
-        <input [(ngModel)]="user.email" placeholder="email" />
-    </label>
-</div>
+    <div class="container">
 
-<div>
-    <label>email:
-        <input [(ngModel)]="user.email" placeholder="email" />
-    </label>
-</div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
 
-<div>
-    <label>phone:
-        <input [(ngModel)]="user.phone" placeholder="phone" />
-    </label>
-</div>
+            <div class="well well-sm">
 
-<div>
-    <label>bio:
-        <input [(ngModel)]="user.bio" placeholder="Type bio here" />
-    </label>
-</div>
+                <div class="row">
 
+                    <div class="col-sm-6 col-md-4">
+
+                        <h1>Profile</h1>
+
+                        <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
+
+                    </div>
+
+                    <h4>{{profile.name | uppercase}} </h4>
+
+                    
+                    <div>
+                        <label>name:
+                            <input [(ngModel)]="profile.name" placeholder="name" />
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>email:
+                            <input [(ngModel)]="profile.email" placeholder="email" />
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>phone:
+                            <input [(ngModel)]="profile.phone" placeholder="phone" />
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>bio:
+                            <input [(ngModel)]="profile.bio" placeholder="Type bio here" />
+                        </label>
+                    </div>
+
+                    
+
+                    <div>
+                        <button>Save Changes</button>
+                    </div>
+                    <!-- 
 <div>
     <label>Created Ideas:
         <input [(ngModel)]="user.createdIdeas" placeholder="Created Ideas" />
@@ -41,4 +65,10 @@
     <label>Liked Ideas:
         <input [(ngModel)]="user.likedIdeas" placeholder="Liked Ideas" />
     </label>
-</div>
+</div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
