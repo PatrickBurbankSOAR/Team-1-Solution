@@ -5,12 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentsComponent } from './components/components.component';
 import { RegisterPageComponent } from './components/register-page/register-page.component';
+import { LoginPageComponent } from './components/login-page/login-page.component';
+import { ProfilePageComponent } from './components/profile-page/profile-page.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { IdeaCardComponent } from './components/idea-card/idea-card.component';
+import { SubmitIdeaPageComponent } from './components/submit-idea-page/submit-idea-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComponentsComponent,
-    RegisterPageComponent
+    RegisterPageComponent,
+    LoginPageComponent,
+    ProfilePageComponent,
+    LandingPageComponent,
+    IdeaCardComponent,
+    SubmitIdeaPageComponent
   ],
   imports: [
     BrowserModule,
