@@ -3,4 +3,5 @@ export class Profile {
     phone:number;
     email:string;
     bio:string;
+    password:string;
 }
