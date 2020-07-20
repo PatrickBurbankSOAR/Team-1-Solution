@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Profile } from '../../Models/Profile-Info'
+//import { AddRegistration } from './add-registration/add-registration.component';
+
 @Component({
   selector: 'app-register-page',
   templateUrl: './register-page.component.html',
@@ -7,7 +8,6 @@ import { Profile } from '../../Models/Profile-Info'
 })
 export class RegisterPageComponent implements OnInit {
   
-  profiles:Profile[];
 
   constructor() { }
 
