@@ -29,7 +29,10 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="btnSubmit">Submit</button>
+                    <button type="button" class="btnSubmit" (onclick)="signUp()">Submit</button>
+                    <p>Return to
+                    <a router="register-page" class="ml-2" style="cursor: pointer; color:blue" routerLinkActive="active" (click)="gotoLogin()">login?</a>
+                    </p>
                 </div>
             </div>
         </div>
