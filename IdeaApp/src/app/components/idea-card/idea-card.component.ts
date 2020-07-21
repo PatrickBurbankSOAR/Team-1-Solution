@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Card } from 'src/app/Models/card-info'
 
 @Component({
   selector: 'app-idea-card',
@@ -10,6 +11,14 @@ export class IdeaCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  card: Card = {
+
+    title: 'my great idea',
+    description: 'to create things!',
+    contact: 'bigidea@cgi.com'
+
   }
 
 }

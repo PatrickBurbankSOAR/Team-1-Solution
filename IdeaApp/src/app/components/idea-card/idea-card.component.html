@@ -6,8 +6,9 @@
     <div class="d-flex justify-content-center h-75">
         <div class="card">
             <img src="https://placeimg.com/600/300/animals" style="width:100%">
-            <h4><b>My Idea!</b></h4> 
-            <p>Description</p> 
+            <h4><b> {{card.title | uppercase}} </b></h4> 
+            <p>{{card.description}}</p> 
+            <p>contact: {{card.contact}}</p> 
         </div>
     </div>
 </div>
