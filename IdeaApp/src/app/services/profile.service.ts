@@ -1,28 +1,31 @@
 import { Injectable } from '@angular/core';
-import { Observable, BehaviorSubject } from 'rxjs';
-import { Profile } from '../models/Profile-Info';
+import { Profiles } from '../Models/Mock-Profiles';
+import { Profile } from '../Models/Profile-Info';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProfileService {
 
-  private _profile = new BehaviorSubject<Profile[]>([]);
+  profiles = Profiles;
 
-  profile$ = this._profile.asObservable();
+  constructor() {}
 
-  getProfiles(): Profile[] {
-    return this._profile.getValue();
-  }
+  ngOnInit() {}
 
-  private setProfiles(val: Profile[]){
-    this._profile.next(val);
-  }
+  addProfile( )
 
-  // addProfile(Profile: Profile){
-  //    this.Profiles = [
-  //     this.
-  //    ]
-     
-  // }
+{
+  new Profile();
+}
+
+  
+  
+  
+
+
+
+
+ 
 }

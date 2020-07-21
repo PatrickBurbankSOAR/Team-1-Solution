@@ -10,7 +10,8 @@ import { Router } from '@angular/router';
 export class IdeaCardDetailsComponent implements OnInit {
 
   card: Card = {
-
+    id: 100,
+    picture:"https://placeimg.com/600/300/animals",
     title: 'My Big Idea',
     description: 'It would be useful to create an app that allows employees in an organization to ride share.',
     contact: 'myUser@email.com'

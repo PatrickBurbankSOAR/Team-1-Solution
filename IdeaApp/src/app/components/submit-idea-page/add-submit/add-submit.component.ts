@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-submit',
@@ -9,20 +10,29 @@ export class AddSubmitComponent implements OnInit {
 
   title:string;
   description:string;
-  contact:string;
+  tags:string[];
+  timestamp:Date = new Date();
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
   onSubmit() {
-    const profile = {
-      title: this.title,
-      description: this.description,
-      contact:this.contact
+    console.log("Successfully submitted " + this.timestamp);
+    // const profile = {
+    //   title: this.title,
+    //   description: this.description,
+    //   tags:this.contact
 
-    }
+    // }
+
+    //Clear form
+    this.title = this.description = '';
+    this.tags = [];
   }
 
+  gotoIdeaPage() {
+    this.router.navigate(['/idea-card']);
+  }
 }

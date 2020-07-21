@@ -5,6 +5,7 @@
   To learn more about this file see: https://angular.io/config/solution-tsconfig.
 */
 {
+  
   "files": [],
   "references": [
     {
@@ -13,10 +14,13 @@
     {
       "path": "./tsconfig.spec.json"
     }
-],
-  "compilerOptions": {
+  ],
 
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "esModuleInterop": true,
     "resolveJsonModule": true
   }
-
 }
+
