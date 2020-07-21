@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { RegisterPageComponent } from '../register-page.component';
-
 
 @Component({
   selector: 'app-add-registration',
@@ -17,9 +15,7 @@ export class AddRegistrationComponent implements OnInit {
   
   constructor() { }
 
-  ngOnInit(): void {
-
-    }
+  ngOnInit(): void { }
 
   onSubmit() {
     const profile = {
@@ -29,9 +25,5 @@ export class AddRegistrationComponent implements OnInit {
       bio: this.bio,
       password: this.password
     }
-  
   }
-
-  
-
 }

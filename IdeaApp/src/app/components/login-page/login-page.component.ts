@@ -25,7 +25,7 @@ export class LoginPageComponent implements OnInit {
     console.log((this.username == "Wiz" && this.password == "p") ? "Success" : "Invalid credentials")
 
     if (this.username == "Wiz" && this.password == "p") {
-      this.router.navigate(['/landing-page']);
+      this.router.navigate(['/idea-card']);
     } else {
       this.username = this.password = '';
     }

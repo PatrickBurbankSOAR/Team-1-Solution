@@ -10,7 +10,7 @@ import { ProfilePageComponent } from './components/profile-page/profile-page.com
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { IdeaCardComponent } from './components/idea-card/idea-card.component';
 import { SubmitIdeaPageComponent } from './components/submit-idea-page/submit-idea-page.component';
-import { AddRegistrationComponent } from './components/Register-Page/add-registration/add-registration.component';
+import { AddRegistrationComponent } from './components/register-page/add-registration/add-registration.component';
 import { AddSubmitComponent } from './components/submit-idea-page/add-submit/add-submit.component';
 
 
@@ -26,7 +26,6 @@ import { AddSubmitComponent } from './components/submit-idea-page/add-submit/add
     SubmitIdeaPageComponent,
     AddRegistrationComponent,
     AddSubmitComponent
-    
   ],
   imports: [
     BrowserModule,
