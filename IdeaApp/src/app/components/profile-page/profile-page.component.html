@@ -1,74 +1,79 @@
-<head>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-</head>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 <body>
 
-    <div class="container">
-
+<div class="container" id="container">
+    <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-6">
-
             <div class="well well-sm">
-
                 <div class="row">
 
-                    <div class="col-sm-6 col-md-4">
 
-                        <h1>Profile</h1>
+                    <div class="col-sm-6 col-md-8">
 
-                        <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
+                        <div class="profile-header-img">
+                            <img class="img-circle"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgOyQwNmfQvHneRR3SfFNHLTDNyhowbTTCTw&usqp=CAU" />
 
+                                <br>
+                                <br>
+
+                            <!--Username-->
+                            <h4>{{profile.name | uppercase}} </h4>
+
+                            <br>
+
+                            <p>
+
+
+                                <!--User's e-mail-->
+                                <label><i class="glyphicon glyphicon-envelope"></i>E-mail:
+                                    <input [(ngModel)]="profile.email" />
+                                </label>
+
+                                <br />
+
+
+
+                                <!--User's phone number-->
+                                <label><i class="glyphicon glyphicon-phone"></i>Phone:
+                                    <input [(ngModel)]="profile.phone">
+                                </label>
+
+                                <!--User's bio section-->
+                                <label>About Me:
+                                    <br>
+                                    <textarea [(ngModel)]="profile.bio"></textarea>
+                                </label>
+
+
+
+                                <br>
+                                <br>
+
+                                <!--Save changes button-->
+                                <button type="button" class="btn btn-primary">Save Changes</button>
+
+                                <br>
+                                <br>
+
+                                <label>My Ideas:</label>
+
+                                <br>
+                                <br>
+
+                                <label>Liked Ideas:</label>
+                                
+
+
+                        </div>
                     </div>
-
-                    <h4>{{profile.name | uppercase}} </h4>
-
-                    
-                    <div>
-                        <label>name:
-                            <input [(ngModel)]="profile.name" placeholder="name" />
-                        </label>
-                    </div>
-
-                    <div>
-                        <label>email:
-                            <input [(ngModel)]="profile.email" placeholder="email" />
-                        </label>
-                    </div>
-
-                    <div>
-                        <label>phone:
-                            <input [(ngModel)]="profile.phone" placeholder="phone" />
-                        </label>
-                    </div>
-
-                    <div>
-                        <label>bio:
-                            <input [(ngModel)]="profile.bio" placeholder="Type bio here" />
-                        </label>
-                    </div>
-
-                    
-
-                    <div>
-                        <button>Save Changes</button>
-                    </div>
-                    <!-- 
-<div>
-    <label>Created Ideas:
-        <input [(ngModel)]="user.createdIdeas" placeholder="Created Ideas" />
-    </label>
-</div>
-
-<div>
-    <label>Liked Ideas:
-        <input [(ngModel)]="user.likedIdeas" placeholder="Liked Ideas" />
-    </label>
-</div> -->
-
                 </div>
             </div>
         </div>
     </div>
-</body>
+    </div>
+
+    </body>

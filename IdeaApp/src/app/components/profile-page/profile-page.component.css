@@ -1,9 +1,53 @@
-body{padding-top:30px;}
+body{
+    padding-top:30px;
+    padding-left: 30px;
+    justify-content: center;
+
+}
+
+.container{
+    justify-content: center;
+}
 
 .glyphicon {  margin-bottom: 10px;margin-right: 10px;}
 
-small {
-display: block;
-line-height: 1.428571429;
-color: #999;
+.profile-header-img {
+    padding: 20px;
+    justify-content: center;
 }
+
+.profile-header-img > img.img-circle {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    box-shadow: lightslategray;
+
+}
+
+
+small {
+display: contents;
+line-height: 1.428571429;
+color: #909597;
+width: 100px;
+
+}
+
+.TextBox{
+    text-align: center;
+    border-style: hidden;
+}
+
+input{
+    border-radius: 1px;
+    border-style: initial;
+    border-color: lightgray;
+}
+
+textarea{
+    border-radius: 1px;
+    border-style: initial;
+    border-color: lightgray;
+}
+
+

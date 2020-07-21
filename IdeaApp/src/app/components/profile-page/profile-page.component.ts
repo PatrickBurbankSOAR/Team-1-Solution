@@ -20,6 +20,7 @@ export class ProfilePageComponent implements OnInit {
   profile: Profile = {
 
     name: 'myUser',
+    password: '12345',
     phone: 5555555555,
     email: 'myUser@gmail.com',
     bio: 'Looking to create and view cool new ideas.'
