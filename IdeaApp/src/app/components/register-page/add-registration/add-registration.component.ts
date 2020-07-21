@@ -1,21 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
->>>>>>> 61a4a425bc75c777da06f771479e49f8f7c4d2f3
->>>>>>> 3c21457dd923f4e3421261b0a73617b52a36e3f2
  // import { RegisterPageComponent } from '../register-page.component';
 import { Router } from '@angular/router';
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 61a4a425bc75c777da06f771479e49f8f7c4d2f3
->>>>>>> 3c21457dd923f4e3421261b0a73617b52a36e3f2
 
 @Component({
   selector: 'app-add-registration',
