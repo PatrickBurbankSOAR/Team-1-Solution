@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+// import { Profile} from '../../../Models/Profile-Info'
 
 @Component({
   selector: 'app-registration-item',
@@ -11,6 +11,7 @@ export class RegistrationItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
