@@ -5,10 +5,15 @@
 <div class="container h-100" style="background-color: cornflowerblue;">
     <div class="d-flex justify-content-center h-75">
         <div class="card">
+            <br>
             <img src="https://placeimg.com/600/300/animals" style="width:100%">
-            <h4><b> {{card.title | uppercase}} </b></h4> 
-            <p>{{card.description}}</p> 
-            <p>contact: {{card.contact}}</p> 
+                <br>
+                <h4><b> {{card.title | uppercase}} </b></h4> 
+                <p>{{card.description}}</p> 
+    
+            <div class="d-flex justify-content-left links">
+                <a href="#">See more details</a>
+            </div>
         </div>
     </div>
 </div>
