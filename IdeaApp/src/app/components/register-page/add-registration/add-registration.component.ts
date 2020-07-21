@@ -12,7 +12,7 @@ export class AddRegistrationComponent implements OnInit {
   email:string;
   phone:string;
   bio:string;
-  password:string
+  password:string;
   
   constructor() { }
 
