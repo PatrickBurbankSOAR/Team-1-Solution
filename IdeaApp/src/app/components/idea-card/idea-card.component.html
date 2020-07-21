@@ -11,21 +11,21 @@
         
         <div class="card">
             <br>
-            <img [src]="cards[2].picture" style="width:100%">
+            <img [src]="cards[index].picture" style="width:100%">
                 <br>
-                <h4><b> {{cards[2].title | uppercase}} </b></h4> 
-                <p>{{cards[2].description}}</p> 
+                <h4><b> {{cards[index].title | uppercase}} </b></h4> 
+                <p>{{cards[index].description}}</p> 
     
             <div class="d-flex justify-content-left links">
                 <a router="register-page" class="ml-2" class="btn btn-primary" routerLinkActive="active" (click)="gotoIdeaCardDetails()">See more details</a>
                 
                 <!--LEFT AND RIGHT BUTTONS-->
                 
-                <a class="carousel-control-prev" href="#slider-animation" data-slide="prev">
+                <a class="carousel-control-prev" href="#slider-animation" data-slide="prev" (click)="goToPreviousCard()">
                     <span class="carousel-control-prev-icon"></span>
                 </a> 
         
-                <a class="carousel-control-next" href="#slider-animation" data-slide="next">
+                <a class="carousel-control-next" href="#slider-animation" data-slide="next" (click)="goToNextCard()">
                     <span class="carousel-control-next-icon"></span>
                 </a>
 

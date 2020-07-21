@@ -31,4 +31,16 @@ export class IdeaCardComponent implements OnInit {
   gotoIdeaCardDetails() {
     this.router.navigate(['/idea-card-details']);
   }
+
+  goToNextCard() {
+
+    this.index++;
+
+  }
+
+  goToPreviousCard() {
+
+    this.index--;
+
+  }
 }
