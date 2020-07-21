@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Profiles } from '../../../Models/Mock-Profiles';
 
  // import { RegisterPageComponent } from '../register-page.component';
 
@@ -21,13 +22,6 @@ export class AddRegistrationComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  onSubmit() {
-    const profile = {
-      name: this.name,
-      email: this.email,
-      phone: this.phone,
-      bio: this.bio,
-      password: this.password
-    }
+
+
   }
-}
