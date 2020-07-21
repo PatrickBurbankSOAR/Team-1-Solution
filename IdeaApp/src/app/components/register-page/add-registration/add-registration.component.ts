@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RegisterPageComponent } from '../register-page.component';
 
 
 @Component({
@@ -29,7 +30,6 @@ export class AddRegistrationComponent implements OnInit {
       password: this.password
     }
   
-
   }
 
   

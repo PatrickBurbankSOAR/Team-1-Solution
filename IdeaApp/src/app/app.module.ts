@@ -13,6 +13,7 @@ import { SubmitIdeaPageComponent } from './components/submit-idea-page/submit-id
 import { AddRegistrationComponent } from './components/Register-Page/add-registration/add-registration.component';
 import { AddSubmitComponent } from './components/submit-idea-page/add-submit/add-submit.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,7 @@ import { AddSubmitComponent } from './components/submit-idea-page/add-submit/add
     IdeaCardComponent,
     SubmitIdeaPageComponent,
     AddRegistrationComponent,
-    AddSubmitComponent,
+    AddSubmitComponent
     
   ],
   imports: [
