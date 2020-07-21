@@ -8,14 +8,6 @@ import { Profile } from 'src/app/Models/Profile-Info'
 })
 export class ProfilePageComponent implements OnInit {
 
-  // user: User = {
-  //   name: 'myUser',
-  //   email: 'myUser@gmail.com',
-  //   phone: '555-555-5555',
-  //   bio: 'Looking to share great new ideas!',
-  //   createdIdeas: 'Cool Idea #1',
-  //   likedIdeas: "Someone Else's Cool Idea"
-  // };
 
   profile: Profile = {
 
