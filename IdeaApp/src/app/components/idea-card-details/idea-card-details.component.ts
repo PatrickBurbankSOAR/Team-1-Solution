@@ -12,7 +12,7 @@ export class IdeaCardDetailsComponent implements OnInit {
 
     title: 'My Big Idea',
     description: 'It would be useful to create an app that allows employees in an organization to ride share.',
-    contact: 'myUser'
+    contact: 'myUser@email.com'
   }
 
   constructor() { }
