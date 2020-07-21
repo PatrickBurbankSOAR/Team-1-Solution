@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
-=======
  // import { RegisterPageComponent } from '../register-page.component';
+import { Router } from '@angular/router';
 
->>>>>>> 5e9258a9d40641512e509ee8eb84fb70f2c7c64f
 
 @Component({
   selector: 'app-add-registration',
@@ -18,7 +16,7 @@ export class AddRegistrationComponent implements OnInit {
   bio:string;
   password:string;
   
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void { }
 
@@ -30,5 +28,17 @@ export class AddRegistrationComponent implements OnInit {
       bio: this.bio,
       password: this.password
     }
+  }
+
+  gotoLogin(): void {
+    this.router.navigate(['/login-page']);
+  }
+
+  signUp() {
+    //Would be call to backend at some point
+    this.router.navigate(['/idea-page']);
+    console.log(name)
+    //if (name != '')
+
   }
 }

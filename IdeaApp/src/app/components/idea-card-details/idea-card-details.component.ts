@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Card } from 'src/app/Models/card-info'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-idea-card-details',
@@ -15,11 +16,15 @@ export class IdeaCardDetailsComponent implements OnInit {
     contact: 'myUser@email.com'
   }
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
 
     
+  }
+
+  gotoIdeaCard(): void {
+    this.router.navigate(['/idea-card'])
   }
 
 }

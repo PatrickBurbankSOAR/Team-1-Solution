@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Card } from 'src/app/Models/card-info'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-idea-card',
@@ -8,7 +9,7 @@ import { Card } from 'src/app/Models/card-info'
 })
 export class IdeaCardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -21,4 +22,7 @@ export class IdeaCardComponent implements OnInit {
 
   }
 
+  gotoIdeaCardDetails() {
+    this.router.navigate(['/idea-card-details']);
+  }
 }
