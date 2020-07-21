@@ -26,13 +26,9 @@ import { RegistrationMainPageComponent } from './components/register-page/regist
     IdeaCardComponent,
     SubmitIdeaPageComponent,
     AddRegistrationComponent,
-<<<<<<< HEAD
-    AddSubmitComponent
-=======
     AddSubmitComponent,
     RegistrationMainPageComponent
     
->>>>>>> 5e9258a9d40641512e509ee8eb84fb70f2c7c64f
   ],
   imports: [
     BrowserModule,
