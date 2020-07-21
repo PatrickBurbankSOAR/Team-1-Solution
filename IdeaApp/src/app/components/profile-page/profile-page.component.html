@@ -1,44 +1,79 @@
-<h1>Profile Page</h1>
-<h2>{{user.name | uppercase}} </h2>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-<div>
-    <label>name:
-        <input [(ngModel)]="user.name" placeholder="name" />
-    </label>
-</div>
+<body>
 
-<div>
-    <label>email:
-        <input [(ngModel)]="user.email" placeholder="email" />
-    </label>
-</div>
+<div class="container" id="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="well well-sm">
+                <div class="row">
 
-<div>
-    <label>email:
-        <input [(ngModel)]="user.email" placeholder="email" />
-    </label>
-</div>
 
-<div>
-    <label>phone:
-        <input [(ngModel)]="user.phone" placeholder="phone" />
-    </label>
-</div>
+                    <div class="col-sm-6 col-md-8">
 
-<div>
-    <label>bio:
-        <input [(ngModel)]="user.bio" placeholder="Type bio here" />
-    </label>
-</div>
+                        <div class="profile-header-img">
+                            <img class="img-circle"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgOyQwNmfQvHneRR3SfFNHLTDNyhowbTTCTw&usqp=CAU" />
 
-<div>
-    <label>Created Ideas:
-        <input [(ngModel)]="user.createdIdeas" placeholder="Created Ideas" />
-    </label>
-</div>
+                                <br>
+                                <br>
 
-<div>
-    <label>Liked Ideas:
-        <input [(ngModel)]="user.likedIdeas" placeholder="Liked Ideas" />
-    </label>
-</div>
+                            <!--Username-->
+                            <h4>{{profile.name | uppercase}} </h4>
+
+                            <br>
+
+                            <p>
+
+
+                                <!--User's e-mail-->
+                                <label><i class="glyphicon glyphicon-envelope"></i>E-mail:
+                                    <input [(ngModel)]="profile.email" />
+                                </label>
+
+                                <br />
+
+
+
+                                <!--User's phone number-->
+                                <label><i class="glyphicon glyphicon-phone"></i>Phone:
+                                    <input [(ngModel)]="profile.phone">
+                                </label>
+
+                                <!--User's bio section-->
+                                <label>About Me:
+                                    <br>
+                                    <textarea [(ngModel)]="profile.bio"></textarea>
+                                </label>
+
+
+
+                                <br>
+                                <br>
+
+                                <!--Save changes button-->
+                                <button type="button" class="btn btn-primary">Save Changes</button>
+
+                                <br>
+                                <br>
+
+                                <label>My Ideas:</label>
+
+                                <br>
+                                <br>
+
+                                <label>Liked Ideas:</label>
+                                
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </body>
