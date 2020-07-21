@@ -11,8 +11,8 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { IdeaCardComponent } from './components/idea-card/idea-card.component';
 import { SubmitIdeaPageComponent } from './components/submit-idea-page/submit-idea-page.component';
 import { AddRegistrationComponent } from './components/Register-Page/add-registration/add-registration.component';
-import { } from '@angular/core';
-import { IdeaCardDetailsComponent } from './components/idea-card-details/idea-card-details.component'
+import { AddSubmitComponent } from './components/submit-idea-page/add-submit/add-submit.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { IdeaCardDetailsComponent } from './components/idea-card-details/idea-ca
     IdeaCardComponent,
     SubmitIdeaPageComponent,
     AddRegistrationComponent,
-    IdeaCardDetailsComponent,
+    AddSubmitComponent
     
   ],
   imports: [
