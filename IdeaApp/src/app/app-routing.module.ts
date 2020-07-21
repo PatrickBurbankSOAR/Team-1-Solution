@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, Router } from '@angular/router';
 import { LoginPageComponent } from '../app/components/login-page/login-page.component';
 import { RegisterPageComponent } from '../app/components/register-page/register-page.component';
+import { AddRegistrationComponent } from '../app/components/register-page/add-registration/add-registration.component';
 import { ProfilePageComponent } from '../app/components/profile-page/profile-page.component';
 import { LandingPageComponent } from '../app/components/landing-page/landing-page.component';
 import { SubmitIdeaPageComponent } from '../app/components/submit-idea-page/submit-idea-page.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: '', component: LoginPageComponent },
   { path: 'login-page', component: LoginPageComponent },
   { path: 'register-page', component: RegisterPageComponent },
+  { path: 'add-registration', component: AddRegistrationComponent },
   { path: 'profile-page', component: ProfilePageComponent },
   { path: 'landing-page', component: LandingPageComponent },
   { path: 'submit-idea-page', component: SubmitIdeaPageComponent },
@@ -25,4 +27,11 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+
+  constructor(private router: Router) { }
+
+
+
+
+ }
