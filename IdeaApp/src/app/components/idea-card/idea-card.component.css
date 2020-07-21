@@ -11,7 +11,7 @@
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
   }
   
-  /* Add rounded corners to the top left and the top right corner of the image */
+  /* Add rounded corners to the image */
   img {
     border-radius: 5px 5px 0 0;
   }
@@ -38,4 +38,5 @@
     bottom:   10;
     width: 200px;
     padding: 0px;
+    border-radius: 5px;
   }
