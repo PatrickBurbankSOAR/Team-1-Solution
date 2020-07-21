@@ -1,22 +1,43 @@
-
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="container h-100" style="background-color: cornflowerblue;">
-    <div class="d-flex justify-content-center h-75">
-        <div class="card">
-            <br>
-            <img src="https://placeimg.com/600/300/animals" style="width:100%">
-                <br>
-                <h4><b> {{card.title | uppercase}} </b></h4> 
-                <p>{{card.description}}</p> 
-    
-            <div class="d-flex justify-content-left links">
-                <a href="#" class="btn btn-primary">See more details</a>
-            </div>
-        </div>
+
+<!-- 
+
+<div class="container h-100"> -->
+
+<div class="d-flex justify-content-center h-75">
+    <div class="card">
+        <br>
+        <img src="https://placeimg.com/600/300/animals" style="width:100%">
+        <br>
+        <h4><b> {{card.title | uppercase}} </b></h4>
+        <p>{{card.description}}</p>
+
+        <!--details button-->
+        <a id="details" href="#" class="btn btn-primary">Click me for more details!</a>
+
+        <div class="container">
+            <div class="btn-holder">
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#slider-animation" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#slider-animation" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+        </div></div>
+
     </div>
+    <!-- </div> -->
+
+
+
+
+
 </div>
-
-
-
