@@ -12,6 +12,7 @@ import { IdeaCardComponent } from './components/idea-card/idea-card.component';
 import { SubmitIdeaPageComponent } from './components/submit-idea-page/submit-idea-page.component';
 import { AddRegistrationComponent } from './components/Register-Page/add-registration/add-registration.component';
 import { AddSubmitComponent } from './components/submit-idea-page/add-submit/add-submit.component';
+import { RegistrationMainPageComponent } from './components/register-page/registration-main-page/registration-main-page.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { AddSubmitComponent } from './components/submit-idea-page/add-submit/add
     IdeaCardComponent,
     SubmitIdeaPageComponent,
     AddRegistrationComponent,
-    AddSubmitComponent
+    AddSubmitComponent,
+    RegistrationMainPageComponent
     
   ],
   imports: [

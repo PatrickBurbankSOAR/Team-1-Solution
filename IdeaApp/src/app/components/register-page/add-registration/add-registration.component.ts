@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RegisterPageComponent } from '../register-page.component';
+ // import { RegisterPageComponent } from '../register-page.component';
 
 
 @Component({
