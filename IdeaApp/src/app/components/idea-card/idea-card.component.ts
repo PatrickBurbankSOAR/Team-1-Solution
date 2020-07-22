@@ -4,6 +4,7 @@ import { CARDSTACK } from 'src/app/Models/mock-cards';
 import { Router } from '@angular/router';
 import { LikesService } from 'src/app/services/likes.service';
 import { CardServiceService } from 'src/app/services/card-service.service';
+import { ProfileService } from '../../services/profile.service';
 
 //import { LIKEDIDEAS } from 'src/app/Models/list-of-liked-ideas';
 
@@ -25,7 +26,7 @@ export class IdeaCardComponent implements OnInit {
   // constructor(private appsevice: AppService) {
   // }
 
-  constructor(private router: Router, private likesservice: LikesService, public cardservice: CardServiceService) { }
+  constructor(private router: Router, private likesservice: LikesService, public cardservice: CardServiceService, public profileService: ProfileService) { }
 
   ngOnInit(): void { 
   }
@@ -36,6 +37,7 @@ export class IdeaCardComponent implements OnInit {
 
   nextCard() {
     this.cardservice.shiftCard();
+    this.profileService.shiftProfile();
   }
 
   likeCard() {

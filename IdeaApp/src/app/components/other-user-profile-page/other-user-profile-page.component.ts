@@ -10,6 +10,7 @@ import { ProfileService } from '../../services/profile.service';
 })
 export class OtherUserProfilePageComponent implements OnInit {
 
+   
   constructor(private router: Router, public profileService: ProfileService) { }
 
   ngOnInit(): void {  }
