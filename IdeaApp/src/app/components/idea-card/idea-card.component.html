@@ -1,32 +1,76 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="container h-100" >
-    <div class="d-flex justify-content-center h-75">
-        
-        <div class="card">
-            <br>
-            <img [src]="cards[index].picture" style="width:100%">
-                <br>
-                <h4><b> {{cards[index].title | uppercase}} </b></h4> 
-                <p>{{cards[index].description}}</p> 
-    
-            <div class="d-flex justify-content-left links">
-                <a router="register-page" class="ml-2" class="btn btn-primary" routerLinkActive="active" (click)="gotoIdeaCardDetails()">See more details</a>
-                
-                <!--LEFT AND RIGHT BUTTONS-->
-                
-                <a class="carousel-control-prev" data-slide="prev" (click)="goToPreviousCard()">
-                    <span class="carousel-control-prev-icon"></span>
-                </a> 
-        
-                <a class="carousel-control-next" data-slide="next" (click)="goToNextCard()">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-
-
+<div class="container h-100" style="background-color: crimson;">
+    <div class="row" style="background-color: whitesmoke; height: 40px">
+        <div class="col d-flex justify-content-center h-100" >
+             <img src="{{ userProfilePic }}"  style="width: 40px; height: 40px;"/>
+        </div>
+        <div class="col d-flex justify-content-center h-75">
+            <p>CGIdea</p>
+        </div>
+        <div class="col">
+            <div class="pos-f-t" >
+                <nav class="navbar navbar-dark bg-dark" >
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-dark p-4">
+                        <ul class="navbar-nav nav">
+                            <li class="nav-item" style="border: 2px solid whitesmoke;">
+                                <button router="register-page" class="btn btn-primary" style="width: 100%;" routerLinkActive="active"
+                                (click)="gotoIdeaCardDetails()">Add an Idea</button>
+                            </li>
+                            <li class="nav-item" style="border: 2px solid whitesmoke;">
+                                <button router="register-page" class="btn btn-primary" style="width: 100%" routerLinkActive="active"
+                                (click)="gotoIdeaCardDetails()">View Profile</button>
+                            </li>
+                            <li class="nav-item" style="border: 2px solid whitesmoke;">
+                                <button router="register-page" class="btn btn-primary" style="width: 100%" routerLinkActive="active"
+                                (click)="gotoIdeaCardDetails()">Sign out</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-     
         </div>
     </div>
-
+    <div class="d-flex justify-content-center h-75">
+        <div class="card">
+            <img id="imgidea" src="{{ cards[index].picture }}" class="img-fluid" />
+            <!--LEFT AND RIGHT BUTTONS-->
+            <!-- <div class="carousel-control-prev" data-slide="prev" (click)="goToPreviousCard()">
+                        <span class="carousel-control-prev-icon"></span>
+                    </div> 
+            
+                    <div class="carousel-control-next" data-slide="next" (click)="goToNextCard()">
+                        <span class="carousel-control-next-icon"></span>
+                    </div> -->
+            <div class="row">
+                <div class="col">
+                    <i class="fa facheck fa-4x fa-check-circle" (click)="goToPreviousCard()"></i>
+                </div>
+                <div class="col">
+                    <i class="fa fatimes fa-4x fa-times-circle float-right" (click)="goToNextCard()"></i>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row ">
+                    <p class="h4 font-weight-bold text-uppercase"> {{cards[index].title}}</p>
+                </div>
+                <div class="row">
+                    <p>{{cards[index].description}}</p>
+                </div>
+                <div class="row">
+                    <div class="d-flex justify-content-left links">
+                        <button router="register-page" class="ml-2" class="btn btn-primary" routerLinkActive="active"
+                            (click)="gotoIdeaCardDetails()">See more details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

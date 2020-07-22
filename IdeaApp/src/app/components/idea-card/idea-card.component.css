@@ -13,17 +13,9 @@
   
   /* Add rounded corners to the image */
   img {
-    border-radius: 5px 5px 0 0;
-  }
-
-  
-  a {
-
-    border: transparent;
-    background-color: transparent;
-    right:    0;
-    bottom:   0;
-
+    object-fit: cover;
+    border-radius: 300px;
+    border: 3px solid red;
   }
 
   #details {
@@ -39,4 +31,12 @@
     width: 200px;
     padding: 0px;
     border-radius: 5px;
+  }
+
+  .facheck {
+    color: green !important;
+  }
+
+  .fatimes {
+    color: red !important;
   }

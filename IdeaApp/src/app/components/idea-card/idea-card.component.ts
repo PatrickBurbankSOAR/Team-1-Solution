@@ -12,35 +12,25 @@ import { Router } from '@angular/router';
 export class IdeaCardComponent implements OnInit {
   cards = CARDSTACK; 
   // public card: Card[] = CARDSTACK;
-  public index = 0;
+  public index:number = 0;
+  userProfilePic:string;
 
   constructor(private router: Router) { }
 
-  // card: Card = {
-  //   id: 20,
-  //   picture:'https://placeimg.com/600/300/animals',
-  //   title: 'my great idea',
-  //   description: 'to create things!',
-  //   contact: 'bigidea@cgi.com'
-
-  // }
-
-  ngOnInit(): void { }
-   
+  ngOnInit(): void { 
+    this.userProfilePic = 'assets/images/profilePicture.jpg'
+  }
 
   gotoIdeaCardDetails() {
     this.router.navigate(['/idea-card-details']);
   }
 
   goToNextCard() {
-
     this.index++;
-
+    document.getElementById('imgidea')
   }
 
   goToPreviousCard() {
-
     this.index--;
-
   }
 }
