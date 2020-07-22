@@ -5,6 +5,6 @@ export class Profile {
     bio:string;
     password:string;
     // make these array lists
-    myIdeas: string[]; 
-    likedIdeas: string[];
+    //myIdeas: string[]; 
+    
 }

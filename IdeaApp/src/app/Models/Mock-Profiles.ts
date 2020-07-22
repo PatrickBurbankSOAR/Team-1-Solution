@@ -8,8 +8,8 @@ export const Profiles: Profile[] = [
         "email": "jim@cgi.com",
         "bio": "I like dogs!",
         "password": "BadPassword",
-        "myIdeas": ["Idea#1", "idea12"],
-        "likedIdeas":  ["puppies", "kittens"],
+        //"myIdeas": ["Idea#1", "idea12"],
+       // "likedIdeas":  ["puppies", "kittens"],
 
     },
     {
@@ -18,8 +18,8 @@ export const Profiles: Profile[] = [
         "email": "john@cgi.com",
         "bio": "I like cats!",
         "password": "GoodPassword",
-        "myIdeas": ["Idea#1", "idea12"],
-        "likedIdeas":  ["puppies", "kittens"],
+        // "myIdeas": ["Idea#1", "idea12"],
+        // "likedIdeas":  ["puppies", "kittens"],
 
     },
     {
@@ -28,8 +28,8 @@ export const Profiles: Profile[] = [
         "email": "timmy@cgi.com",
         "bio": "I like both!",
         "password": "GreatPassword",
-        "myIdeas": ["Idea#1", "idea12"],
-        "likedIdeas":  ["puppies", "kittens"],
+        // "myIdeas": ["Idea#1", "idea12"],
+        // "likedIdeas":  ["puppies", "kittens"],
 
     }
 ]
