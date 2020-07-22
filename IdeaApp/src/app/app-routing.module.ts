@@ -9,6 +9,7 @@ import { SubmitIdeaPageComponent } from '../app/components/submit-idea-page/subm
 import { IdeaCardComponent } from '../app/components/idea-card/idea-card.component';
 import { IdeaCardDetailsComponent} from '../app/components/idea-card-details/idea-card-details.component';
 import { OtherUserProfilePageComponent } from '../app/components/other-user-profile-page/other-user-profile-page.component';
+import { OutOfCardsComponent } from '../app/components/out-of-cards/out-of-cards.component';
 
 const routes: Routes = [
   { path: '', component: LoginPageComponent },
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'submit-idea-page', component: SubmitIdeaPageComponent },
   { path: 'idea-card', component: IdeaCardComponent },
   { path: 'idea-card-details', component: IdeaCardDetailsComponent },
-  { path: 'other-user-page', component: OtherUserProfilePageComponent }
+  { path: 'other-user-page', component: OtherUserProfilePageComponent },
+  { path: 'out-of-cards', component: OutOfCardsComponent}
 
 ];
 
