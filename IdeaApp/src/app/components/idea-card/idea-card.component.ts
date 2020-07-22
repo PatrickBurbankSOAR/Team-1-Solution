@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 // import { Card } from 'src/app/Models/card-info'
-import { CARDSTACK } from 'src/app/Models/mock-cards';
+// import { CARDSTACK } from 'src/app/Models/mock-cards';
 import { Router } from '@angular/router';
-
-import { LikesService } from 'src/app/services/likes.service'
+import { LikesService } from 'src/app/services/likes.service';
+import {CardServiceService} from 'src/app/services/card-service.service';
 
 //import { LIKEDIDEAS } from 'src/app/Models/list-of-liked-ideas';
 
@@ -14,14 +14,19 @@ import { LikesService } from 'src/app/services/likes.service'
 
 })
 export class IdeaCardComponent implements OnInit {
-  cards = CARDSTACK; 
+  // cards = CARDSTACK; 
   ideas: string[];
-  // public card: Card[] = CARDSTACK;
+
   public index:number = 0;
   userProfilePic:string;
-  likesservice: any;
+  //likesservice: any;
+  
 
-  constructor(private router: Router, likesservice: LikesService) { }
+  // count: number;
+  // constructor(private appsevice: AppService) {
+  // }
+
+  constructor(private router: Router, private likesservice: LikesService, public cardservice: CardServiceService) { }
 
   ngOnInit(): void { 
     this.userProfilePic = 'assets/images/profilePicture.jpg'
@@ -44,16 +49,15 @@ export class IdeaCardComponent implements OnInit {
   }
 
   nextCard() {
-    this.index++;
-
+    this.cardservice.shiftCard();
+    
   }
 
   likeCard() {
-
-    this.index++;
+    this.cardservice.shiftCard();
     const name = this.cards[this.index].title;
     this.ideas.push(name);
-    
     this.likesservice.save(this.ideas);
+
   }
 }
