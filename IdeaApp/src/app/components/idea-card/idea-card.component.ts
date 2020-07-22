@@ -17,7 +17,9 @@ export class IdeaCardComponent implements OnInit {
   cards = CARDSTACK; 
   ideas: string[] = [];
 
+  public length:number = 0;
   public index:number = 0;
+  // int length = Array.getLength(cards);
   //likesservice: any;
   
 
@@ -35,7 +37,17 @@ export class IdeaCardComponent implements OnInit {
   }
 
   nextCard() {
-    this.cardservice.shiftCard();
+    this.length = this.cardservice.cards.length;
+    if (this.length > 1) {
+      console.log(this.length);
+      this.cardservice.shiftCard();
+    }
+    else {
+      console.log("End of array");
+    }
+
+
+    console.log(this.length);
   }
 
   likeCard() {
@@ -44,7 +56,14 @@ export class IdeaCardComponent implements OnInit {
     console.log(name)
     this.ideas.push(name);
     this.likesservice.save(this.ideas);
-    this.cardservice.shiftCard();
+    this.length = this.cardservice.cards.length;
+    if (this.length > 1) {
+      console.log(this.length);
+      this.cardservice.shiftCard();
+    }
+    else {
+        console.log("End of array");
+    }
 
   }
 }
