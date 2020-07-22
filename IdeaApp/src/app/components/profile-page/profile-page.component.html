@@ -1,89 +1,75 @@
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
-<body>
-
 <div class="container" id="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6">
-            <div class="well well-sm">
-                <div class="row">
 
 
-                    <div class="col-sm-6 col-md-8">
-
-                        <div class="profile-header-img">
-                            <img class="img-circle"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgOyQwNmfQvHneRR3SfFNHLTDNyhowbTTCTw&usqp=CAU" />
-
-                                <br>
-                                <br>
-
-                            <!--Username-->
-                            <h4>{{profile.name | uppercase}} </h4>
-
-                            <br>
-
-                            <p>
-
-
-                                <!--User's e-mail-->
-                                <label><i class="glyphicon glyphicon-envelope"></i>E-mail:
-                                    <input [(ngModel)]="profile.email" />
-                                </label>
-
-                                <br />
+    <img class="img-circle" id="profile-img"
+        src="assets/images/profilePicture.jpg" />
 
 
 
-                                <!--User's phone number-->
-                                <label><i class="glyphicon glyphicon-phone"></i>Phone:
-                                    <input [(ngModel)]="profile.phone">
-                                </label>
-
-                                <!--User's bio section-->
-                                <label>About Me:
-                                    <br>
-                                    <textarea [(ngModel)]="profile.bio"></textarea>
-                                </label>
+    <button id="upload-photo-button" class="btn login_btn">Upload</button>
 
 
 
-                                <br>
-                                <br>
 
-                                <!--Save changes button-->
-                                <button type="button" class="btn btn-primary">Save Changes</button>
+    <!--Username-->
+    <h4 id="profile-name">{{profile.name}} </h4>
 
-                                <br>
+    <br>
 
-                                <!--Back button-->
-                                <button router="register-page" class="btn btn-primary" routerLinkActive="active"
-                                (click)="gotoIdeaPage()">Go back</button>
-                                <br>
-                                <br>
-
-                                <label>My Ideas:</label>
-
-                                <!--user ideas-->
-                                <p>USER IDEAS WILL GO HERE</p>
-
-                                <br>
-
-                                <label>Liked Ideas:</label>
-
-                                <!--liked ideas-->
-                                <p>LIKED IDEAS WILL GO HERE</p>
-                                
+    <p>
 
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <!--User's e-mail-->
+        <label>E-mail:</label>
+        <input class="form-control input_user" value={{profile.email}} />
+
+
+        <br />
+
+
+
+        <!--User's phone number-->
+        <label>Phone:</label>
+        <input class="form-control input_user" value={{profile.phone}}>
+
+
+        <br>
+
+        <!--User's bio section-->
+        <label>About Me:</label>
+        <br>
+
+        <textarea class="form-control input_user" id="bio-text" value={{profile.bio}}></textarea>
+
+
+
+        <div class="row">
+
+            <!--Back button-->
+        <button router="register-page" class="btn login_btn" routerLinkActive="active" (click)="gotoIdeaPage()">Go
+            back</button>
+        <br>
+
+        <!--Save changes button-->
+        <button type="button" class="btn login_btn">Save Changes</button>
+
+        <br>
+
+
+        
+
     </div>
 
-    </body>
+
+        <label>My Ideas:</label>
+
+        <!--user ideas-->
+    <p>USER IDEAS WILL GO HERE</p>
+
+
+    <label>Liked Ideas:</label>
+
+    <!--liked ideas-->
+    <p>LIKED IDEAS WILL GO HERE</p>
+
+</div>

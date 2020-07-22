@@ -3,28 +3,30 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-<div class="container">
-	<div class="row">
-		<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+<div class="container h-100" style="background-color: crimson;">
+    <div class="d-flex justify-content-center h-60">
+	<!-- <div class="row"> -->
+		<!-- <div class="col-sm-6 col-md-4 col-lg-3 mt-4"> -->
+            
                 <div class="card">
 
                     <!--This is the header image-->
-                    <img class="card-img-top" src="https://i.picsum.photos/id/281/200/150.jpg?hmac=4pBu9zohi8lcOrdgxS62a9Xqot-BaD8GM9C_IVYv5vo">
+                    <img class="card-img-top" src="{{ cards[index].picture }}">
 
                     <div class="card-block">
                         <figure class="profile"></figure>
 
                         <!--Idea Title-->
-                        <h4 class="card-title mt-3">{{card.title}}</h4>
+                        <h4 class="card-title mt-3">{{cards[index].title}}</h4>
 
                         <!--Idea Description-->
-                        <div class="card-text">{{card.description}}</div>
+                        <div class="card-text">{{cards[index].description}}</div>
 
                         <!--Contact Information-->                    
-                        <div class="card-text">Contact: {{card.contact}}</div>
+                        <div class="card-text">Contact: {{cards[index].contact}}</div>
 
                         <!--Idea Tags-->
-                        <div class="card-text">{{card.tags}}</div>
+                        <div class="card-text">Tags: {{cards[index].tags}}</div>
 
 
 
@@ -33,6 +35,7 @@
                     <a router="register-page" class="ml-2" class="btn btn-primary" routerLinkActive="active" (click)="gotoIdeaCard()">Back</a>
 
                     </div>
-                </div>
-            </div>
+                <!-- </div> -->
+            <!-- </div> -->
+        </div>
 	</div>
