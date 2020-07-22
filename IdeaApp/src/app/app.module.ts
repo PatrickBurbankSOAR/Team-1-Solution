@@ -15,7 +15,8 @@ import { AddSubmitComponent } from './components/submit-idea-page/add-submit/add
 import { RegistrationMainPageComponent } from './components/register-page/registration-main-page/registration-main-page.component';
 import { IdeaCardDetailsComponent } from './components/idea-card-details/idea-card-details.component';
 import { OtherUserProfilePageComponent } from './components/other-user-profile-page/other-user-profile-page.component'
-import { NavbarComponent } from './navbar/navbar.component'
+import { NavbarComponent } from './navbar/navbar.component';
+import { OutOfCardsComponent } from './components/out-of-cards/out-of-cards.component'
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { NavbarComponent } from './navbar/navbar.component'
     RegistrationMainPageComponent,
     IdeaCardDetailsComponent,
     OtherUserProfilePageComponent,
-    NavbarComponent
+    NavbarComponent,
+    OutOfCardsComponent
     
   ],
   imports: [

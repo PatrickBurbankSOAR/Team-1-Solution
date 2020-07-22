@@ -36,6 +36,10 @@ export class IdeaCardComponent implements OnInit {
     this.router.navigate(['/idea-card-details']);
   }
 
+  outOfCards(){
+    this.router.navigate(['/out-of-cards']);
+  }
+
   nextCard() {
     this.length = this.cardservice.cards.length;
     if (this.length > 1) {
@@ -44,6 +48,7 @@ export class IdeaCardComponent implements OnInit {
     }
     else {
       console.log("End of array");
+      this.outOfCards()
     }
 
 
@@ -56,6 +61,7 @@ export class IdeaCardComponent implements OnInit {
     console.log(name)
     this.ideas.push(name);
     this.likesservice.save(this.ideas);
+
     this.length = this.cardservice.cards.length;
     if (this.length > 1) {
       console.log(this.length);
@@ -63,6 +69,7 @@ export class IdeaCardComponent implements OnInit {
     }
     else {
         console.log("End of array");
+        this.outOfCards()
     }
 
   }
