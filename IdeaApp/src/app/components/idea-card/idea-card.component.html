@@ -38,7 +38,7 @@
     </div>
     <div class="d-flex justify-content-center h-75">
         <div class="card">
-            <img id="imgidea" src="{{ cards[index].picture }}" class="img-fluid" />
+            <img id="imgidea" src="{{ cardservice.cards[0].picture }}" class="img-fluid" />
             <!--LEFT AND RIGHT BUTTONS-->
             <!-- <div class="carousel-control-prev" data-slide="prev" (click)="goToPreviousCard()">
                         <span class="carousel-control-prev-icon"></span>
@@ -63,14 +63,14 @@
             </div>
             <div class="container">
                 <div class="row ">
-                    <p class="h4 font-weight-bold text-uppercase"> {{cards[index].title}}</p>
+                    <p class="h4 font-weight-bold text-uppercase"> {{cardservice.cards[0].title}}</p>
                 </div>
                 <div class="row">
-                    <p>{{cards[index].description.substring(0,20)}}...</p>
+                    <p>{{cardservice.cards[0].description.substring(0,20)}}...</p>
                 </div>
 
                 <div class="row">
-                    <p>Tags: {{cards[index].tags}}</p>
+                    <p>Tags: {{cardservice.cards[0].tags}}</p>
                 </div>
 
 
