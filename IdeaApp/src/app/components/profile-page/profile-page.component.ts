@@ -17,7 +17,10 @@ export class ProfilePageComponent implements OnInit {
     password: '12345',
     phone: 5555555555,
     email: 'myUser@gmail.com',
-    bio: 'Looking to create and view cool new ideas.'
+    bio: 'Looking to create and view cool new ideas.',
+    myIdeas: ["Idea#1", "idea12"],
+    likedIdeas:  ["puppies", "kittens"],
+
   }
 
 
