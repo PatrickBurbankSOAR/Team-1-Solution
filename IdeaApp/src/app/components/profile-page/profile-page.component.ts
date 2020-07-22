@@ -68,13 +68,9 @@ export class ProfilePageComponent implements OnInit {
     this.router.navigate(['/idea-card']);
   }
 
-  // printLikes() {
+  gotoIdeaDetails() {
+    this.router.navigate(['/idea-card-details']);
+  }
 
-  //   var printThis = "";
-  //   for (var i = 0; i < this.likeArray.length; i++) {
-  //     printThis += "<br>" + this.likeArray[i];
-  //   }
-  //   return printThis; // <-- to be printed to the div
-  // }
 
 }

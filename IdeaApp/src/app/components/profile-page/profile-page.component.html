@@ -66,12 +66,14 @@
     <label>My Ideas:</label>
 
     <!--user ideas-->
-    <p id="created">{{createdItem}}</p>
+    <!-- <p id="created">{{createdItem}}</p> -->
+    <a router="register-page" class="ml-2" style="cursor: pointer; color:blue" routerLinkActive="active" (click)="gotoIdeaDetails()">{{createdItem}}</a>
 
 
     <label>Liked Ideas:</label>
 
     <!--liked ideas-->
-    <p id="likes">{{likedItem}}</p>
+    <a router="register-page" class="ml-2" style="cursor: pointer; color:blue" routerLinkActive="active" (click)="gotoIdeaDetails()">{{likedItem}}</a>
+
 
 </div>
