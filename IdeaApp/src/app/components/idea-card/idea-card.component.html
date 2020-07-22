@@ -3,33 +3,31 @@
 <div class="container h-100" style="background-color: crimson;">
     <div class="row" style="background-color: whitesmoke; height: 40px">
         <div class="col d-flex justify-content-center h-100" >
-             <img src="{{ userProfilePic }}"  style="width: 40px; height: 40px;"/>
+             <img src="{{ userProfilePic }}"  style="width: 40px; height: 40px;" (click)="gotoProfilePage()"/>
         </div>
         <div class="col d-flex justify-content-center h-75">
             <p>CGIdea</p>
         </div>
-        <div class="col">
-            <div class="pos-f-t" >
-                <nav class="navbar navbar-dark bg-dark" >
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+        <div class="col d-flex justify-content-center h-100" style="padding: 0%; z-index: 1;">
+            <div class="">
+                <nav class="navbar navbar-dark" style="background-color: crimson; padding: 0%">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </nav>
                 <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="bg-dark p-4">
+                    <div class="bg-dark p-1">
                         <ul class="navbar-nav nav">
-                            <li class="nav-item" style="border: 2px solid whitesmoke;">
-                                <button router="register-page" class="btn btn-primary" style="width: 100%;" routerLinkActive="active"
-                                (click)="gotoAddIdeaPage()">Add an Idea</button>
+                            <li class="nav-item" style="border: 2px solid crimson;">
+                                <button router="register-page" class="btn btn-primary"  routerLinkActive="active"
+                                (click)="gotoAddIdeaPage()">Add an Ideaaaaaaaaaaaaaaaaaaaaaa</button>
                             </li>
-                            <li class="nav-item" style="border: 2px solid whitesmoke;">
-                                <button router="register-page" class="btn btn-primary" style="width: 100%" routerLinkActive="active"
-                                (click)="gotoProfilePage()">View Profile</button>
+                            <li class="nav-item" style="border: 2px solid crimson;">
+                                <button router="register-page" class="btn btn-primary"  routerLinkActive="active"
+                                (click)="gotoProfilePage()"><i class="fa fa-user"></i> View Profile</button>
                             </li>
-                            <li class="nav-item" style="border: 2px solid whitesmoke;">
-                                <button router="register-page" class="btn btn-primary" style="width: 100%" routerLinkActive="active"
+                            <li class="nav-item" style="border: 2px solid crimson;">
+                                <button router="register-page" class="btn btn-primary" routerLinkActive="active"
                                 (click)="signOut()">Sign out</button>
                             </li>
                         </ul>
