@@ -37,11 +37,14 @@ export class IdeaCardComponent implements OnInit {
     this.router.navigate(['/login-page']);
   }
 
-  goToNextCard() {
+  nextCard() {
     this.index++;
   }
 
-  goToPreviousCard() {
-    this.index--;
+  likeCard() {
+    this.index++;
+    //Add to liked cards
+    //{{this.cards[this.index].title}}
+
   }
 }
