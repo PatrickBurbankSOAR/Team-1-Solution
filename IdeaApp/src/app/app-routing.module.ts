@@ -7,8 +7,8 @@ import { ProfilePageComponent } from '../app/components/profile-page/profile-pag
 import { LandingPageComponent } from '../app/components/landing-page/landing-page.component';
 import { SubmitIdeaPageComponent } from '../app/components/submit-idea-page/submit-idea-page.component';
 import { IdeaCardComponent } from '../app/components/idea-card/idea-card.component';
-import { IdeaCardDetailsComponent} from '../app/components/idea-card-details/idea-card-details.component'
-
+import { IdeaCardDetailsComponent} from '../app/components/idea-card-details/idea-card-details.component';
+import { OtherUserProfilePageComponent } from '../app/components/other-user-profile-page/other-user-profile-page.component';
 
 const routes: Routes = [
   { path: '', component: LoginPageComponent },
@@ -19,7 +19,8 @@ const routes: Routes = [
   { path: 'landing-page', component: LandingPageComponent },
   { path: 'submit-idea-page', component: SubmitIdeaPageComponent },
   { path: 'idea-card', component: IdeaCardComponent },
-  { path: 'idea-card-details', component: IdeaCardDetailsComponent }
+  { path: 'idea-card-details', component: IdeaCardDetailsComponent },
+  { path: 'other-user-page', component: OtherUserProfilePageComponent }
 
 ];
 
