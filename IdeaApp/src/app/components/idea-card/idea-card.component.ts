@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { CARDSTACK } from 'src/app/Models/mock-cards';
 import { Router } from '@angular/router';
 import { LikesService } from 'src/app/services/likes.service';
-import {CardServiceService} from 'src/app/services/card-service.service';
+import { CardServiceService } from 'src/app/services/card-service.service';
 
 //import { LIKEDIDEAS } from 'src/app/Models/list-of-liked-ideas';
 

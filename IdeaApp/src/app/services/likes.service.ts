@@ -14,6 +14,7 @@ save(array) {
 }
 
 fetch() {
+  
     return this.array;
 }
 }
