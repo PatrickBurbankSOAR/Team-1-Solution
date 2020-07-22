@@ -14,6 +14,7 @@ import {CardServiceService} from 'src/app/services/card-service.service';
 
 })
 export class IdeaCardComponent implements OnInit {
+<<<<<<< HEAD
   // cards = CARDSTACK; 
   ideas: string[];
 
@@ -27,6 +28,16 @@ export class IdeaCardComponent implements OnInit {
   // }
 
   constructor(private router: Router, private likesservice: LikesService, public cardservice: CardServiceService) { }
+=======
+  cards = CARDSTACK; 
+  ideas: string[] = [];
+  // public card: Card[] = CARDSTACK;
+  public index:number = 0;
+  userProfilePic:string;
+
+
+  constructor(private router: Router, private likesservice: LikesService) { }
+>>>>>>> 5341aa0fc4e6d7a7994a0f209a406a09fd95ac5c
 
   ngOnInit(): void { 
     this.userProfilePic = 'assets/images/profilePicture.jpg'

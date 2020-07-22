@@ -4,7 +4,12 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color:crimson;
+    /* background-color:whitesmoke; */
+
+    --def: #dddddd;
+    --inv: #fff;
+    background-color: #dddddd;
+    background-image: linear-gradient(-25deg, crimson 0%, #dddddd 100%);
 }
 
 button {
@@ -17,15 +22,15 @@ button {
     background-color:whitesmoke !important;
     width: 100% !important;
     color: crimson !important;
-    border: 1px solid crimson;
-}
-
-.crim {
-    background-color: crimson;
+    border: 1px solid crimson !important;
 }
 
 .btn-primary:hover {
   background-color: crimson !important;
   color: whitesmoke !important;
   border: 1px solid crimson;
+}
+
+.crim {
+    background-color: crimson;
 }
