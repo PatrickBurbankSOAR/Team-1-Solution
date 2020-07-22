@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 // import { Card } from 'src/app/Models/card-info'
-// import { CARDSTACK } from 'src/app/Models/mock-cards';
+import { CARDSTACK } from 'src/app/Models/mock-cards';
 import { Router } from '@angular/router';
 import { LikesService } from 'src/app/services/likes.service';
 import {CardServiceService} from 'src/app/services/card-service.service';
@@ -14,8 +14,8 @@ import {CardServiceService} from 'src/app/services/card-service.service';
 
 })
 export class IdeaCardComponent implements OnInit {
-  // cards = CARDSTACK; 
-  ideas: string[];
+  cards = CARDSTACK; 
+  ideas: string[] = [];
 
   public index:number = 0;
   userProfilePic:string;
@@ -54,10 +54,12 @@ export class IdeaCardComponent implements OnInit {
   }
 
   likeCard() {
-    this.cardservice.shiftCard();
-    const name = this.cardservice.cards[0].title;
+    
+    const name = this.cardservice.cards[this.index].title;
+    console.log(name)
     this.ideas.push(name);
     this.likesservice.save(this.ideas);
+    this.cardservice.shiftCard();
 
   }
 }
