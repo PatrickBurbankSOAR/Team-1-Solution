@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 // import { User } from './user';
 import { Profile } from 'src/app/Models/Profile-Info'
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-profile-page',
   templateUrl: './profile-page.component.html',
@@ -20,9 +22,12 @@ export class ProfilePageComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  gotoIdeaPage() {
+    this.router.navigate(['/idea-card']);
+  }
 }

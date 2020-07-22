@@ -25,9 +25,20 @@ export class IdeaCardComponent implements OnInit {
     this.router.navigate(['/idea-card-details']);
   }
 
+  gotoAddIdeaPage() {
+    this.router.navigate(['/submit-idea-page']);
+  }
+
+  gotoProfilePage() {
+    this.router.navigate(['/profile-page']);
+  }
+
+  signOut() {
+    this.router.navigate(['/login-page']);
+  }
+
   goToNextCard() {
     this.index++;
-    document.getElementById('imgidea')
   }
 
   goToPreviousCard() {
