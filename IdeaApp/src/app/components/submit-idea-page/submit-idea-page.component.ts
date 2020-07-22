@@ -8,20 +8,24 @@ import { Card } from 'src/app/Models/card-info'
 })
 export class SubmitIdeaPageComponent implements OnInit {
 
+  
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  card: Card = {
+  // card: Card = {
 
-    id: 200,
-    picture:"https://placeimg.com/600/300/animals",
-    title: 'my great idea',
-    description: 'to create things!',
-    contact: 'bigidea@cgi.com',
-    tags: "Tags: IoT   Retail   Security"
+  //   id: 200,
+  //   picture:"https://placeimg.com/600/300/animals",
+  //   title: 'my great idea',
+  //   description: 'to create things!',
+  //   contact: 'bigidea@cgi.com',
+  //   tags: "Tags: IoT   Retail   Security"
 
-  }
+  // }
+
+
 
 }

@@ -4,6 +4,7 @@ import { Profile } from 'src/app/Models/Profile-Info'
 import { Router } from '@angular/router';
 import { LikesService } from 'src/app/services/likes.service'
 import { ProfileCreationService } from 'src/app/services/profile-creation.service'
+import { AddIdeaService } from 'src/app/services/add-idea.service'
 
 @Component({
   selector: 'app-profile-page',
@@ -13,6 +14,7 @@ import { ProfileCreationService } from 'src/app/services/profile-creation.servic
 export class ProfilePageComponent implements OnInit {
 
   likedItem;
+  createdItem;
   name;
   email;
   phone;
@@ -36,7 +38,7 @@ export class ProfilePageComponent implements OnInit {
 
 
 
-  constructor(private router: Router, private likesservice: LikesService, private profilecreationservice: ProfileCreationService) {
+  constructor(private router: Router, private addideaservice: AddIdeaService, private likesservice: LikesService, private profilecreationservice: ProfileCreationService) {
 
 
     
@@ -46,9 +48,9 @@ export class ProfilePageComponent implements OnInit {
 
   ngOnInit(): void {
 
+    //DIsplaying liked item
     this.likeArray = this.likesservice.fetch();
     console.log(this.likeArray[this.likeArray.length - 1]);
-
     this.likedItem = this.likeArray[this.likeArray.length -1];
 
     //Hooking up registration info
@@ -57,19 +59,22 @@ export class ProfilePageComponent implements OnInit {
     this.phone = this.profilecreationservice.fetchPhone();
     this.bio = this.profilecreationservice.fetchBio();
 
+    //Displaying created item
+    this.createdItem = this.addideaservice.fetchIdea();
+
   }
 
   gotoIdeaPage() {
     this.router.navigate(['/idea-card']);
   }
 
-  printLikes() {
+  // printLikes() {
 
-    var printThis = "";
-    for (var i = 0; i < this.likeArray.length; i++) {
-      printThis += "<br>" + this.likeArray[i];
-    }
-    return printThis; // <-- to be printed to the div
-  }
+  //   var printThis = "";
+  //   for (var i = 0; i < this.likeArray.length; i++) {
+  //     printThis += "<br>" + this.likeArray[i];
+  //   }
+  //   return printThis; // <-- to be printed to the div
+  // }
 
 }
