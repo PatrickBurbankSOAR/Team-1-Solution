@@ -1,5 +1,6 @@
-<div class="container" id="container">
+<app-navbar></app-navbar>
 
+<div class="container" id="container">
 
     <img class="img-circle" id="profile-img" src="assets/images/profilePicture.jpg" />
 
@@ -11,7 +12,7 @@
 
 
     <!--Username-->
-    <h4 id="profile-name">{{profile.name}} </h4>
+    <h4 id="profile-name">{{name}} </h4>
 
     <br>
 
@@ -20,7 +21,7 @@
 
         <!--User's e-mail-->
         <label>E-mail:</label>
-        <input class="form-control input_user" value={{profile.email}} />
+        <input class="form-control input_user" value={{email}} />
 
 
         <br />
@@ -29,7 +30,7 @@
 
         <!--User's phone number-->
         <label>Phone:</label>
-        <input class="form-control input_user" value={{profile.phone}}>
+        <input class="form-control input_user" value={{phone}}>
 
 
         <br>
@@ -38,7 +39,7 @@
         <label>About Me:</label>
         <br>
 
-        <textarea class="form-control input_user" id="bio-text" value={{profile.bio}}></textarea>
+        <textarea class="form-control input_user" id="bio-text" value={{bio}}></textarea>
 
 
 

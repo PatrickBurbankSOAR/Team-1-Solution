@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { CARDSTACK } from 'src/app/Models/mock-cards';
 import { Router } from '@angular/router';
 import { LikesService } from 'src/app/services/likes.service';
-import {CardServiceService} from 'src/app/services/card-service.service';
+import { CardServiceService } from 'src/app/services/card-service.service';
 
 //import { LIKEDIDEAS } from 'src/app/Models/list-of-liked-ideas';
 
@@ -18,7 +18,6 @@ export class IdeaCardComponent implements OnInit {
   ideas: string[] = [];
 
   public index:number = 0;
-  userProfilePic:string;
   //likesservice: any;
   
 
@@ -29,28 +28,14 @@ export class IdeaCardComponent implements OnInit {
   constructor(private router: Router, private likesservice: LikesService, public cardservice: CardServiceService) { }
 
   ngOnInit(): void { 
-    this.userProfilePic = 'assets/images/profilePicture.jpg'
   }
 
   gotoIdeaCardDetails() {
     this.router.navigate(['/idea-card-details']);
   }
 
-  gotoAddIdeaPage() {
-    this.router.navigate(['/submit-idea-page']);
-  }
-
-  gotoProfilePage() {
-    this.router.navigate(['/profile-page']);
-  }
-
-  signOut() {
-    this.router.navigate(['/login-page']);
-  }
-
   nextCard() {
     this.cardservice.shiftCard();
-    
   }
 
   likeCard() {

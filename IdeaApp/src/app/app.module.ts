@@ -15,6 +15,7 @@ import { AddSubmitComponent } from './components/submit-idea-page/add-submit/add
 import { RegistrationMainPageComponent } from './components/register-page/registration-main-page/registration-main-page.component';
 import { IdeaCardDetailsComponent } from './components/idea-card-details/idea-card-details.component';
 import { OtherUserProfilePageComponent } from './components/other-user-profile-page/other-user-profile-page.component'
+import { NavbarComponent } from './navbar/navbar.component'
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { OtherUserProfilePageComponent } from './components/other-user-profile-p
     AddSubmitComponent,
     RegistrationMainPageComponent,
     IdeaCardDetailsComponent,
-    OtherUserProfilePageComponent
+    OtherUserProfilePageComponent,
+    NavbarComponent
     
   ],
   imports: [

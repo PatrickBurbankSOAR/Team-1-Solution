@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Profiles } from '../../../Models/Mock-Profiles';
+import { ProfileCreationService } from 'src/app/services/profile-creation.service'
 
  // import { RegisterPageComponent } from '../register-page.component';
 import { Router } from '@angular/router';
@@ -17,7 +18,7 @@ export class AddRegistrationComponent implements OnInit {
   bio:string;
   password:string;
   
-  constructor(private router: Router) { }
+  constructor(private router: Router, private profilecreationservice: ProfileCreationService) { }
 
   ngOnInit(): void { }
 
@@ -27,9 +28,14 @@ export class AddRegistrationComponent implements OnInit {
 
   signUp() {
     //Would be call to backend at some point
+
+    console.log(this.name)
+
+    this.profilecreationservice.saveInfo(this.name, this.email, this.phone, this.bio);
+
     this.router.navigate(['/submit-idea-page']);
-    console.log(name)
-    //if (name != '')
+    
+ 
 
   }
 
