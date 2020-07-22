@@ -1,0 +1,35 @@
+<div class="row" style="background-color: whitesmoke; height: 40px; width: 100%; max-width: 100%; margin: auto">
+    <div class="col d-flex justify-content-center h-100" >
+         <img src="{{ userProfilePic }}"  style="width: 40px; height: 40px;" (click)="gotoProfilePage()"/>
+    </div>
+    <div class="col d-flex justify-content-center h-75">
+        <label>CGIdea</label>
+    </div>
+    <div class="col d-flex justify-content-center h-100" style="padding: 0%; z-index: 1;">
+        <div class="">
+            <nav class="navbar navbar-dark" style="background-color: crimson; padding: 0%">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-1">
+                    <ul class="navbar-nav nav">
+                        <li class="nav-item" style="border: 2px solid crimson;">
+                            <button router="register-page" class="btn btn-primary"  routerLinkActive="active"
+                            (click)="gotoAddIdeaPage()">Add an Idea</button>
+                        </li>
+                        <li class="nav-item" style="border: 2px solid crimson;">
+                            <button router="register-page" class="btn btn-primary"  routerLinkActive="active"
+                            (click)="gotoProfilePage()"><i class="fa fa-user"></i> View Profile</button>
+                        </li>
+                        <li class="nav-item" style="border: 2px solid crimson;">
+                            <button router="register-page" class="btn btn-primary" routerLinkActive="active"
+                            (click)="signOut()">Sign out</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
