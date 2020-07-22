@@ -4,4 +4,7 @@ export class Profile {
     email:string;
     bio:string;
     password:string;
+    // make these array lists
+    myIdeas: string[]; 
+    likedIdeas: string[];
 }

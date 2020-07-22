@@ -7,7 +7,9 @@ export const Profiles: Profile[] = [
         "phone": 1234567890,
         "email": "jim@cgi.com",
         "bio": "I like dogs!",
-        "password": "BadPassword"
+        "password": "BadPassword",
+        "myIdeas": ["Idea#1", "idea12"],
+        "likedIdeas":  ["puppies", "kittens"],
 
     },
     {
@@ -15,13 +17,19 @@ export const Profiles: Profile[] = [
         "phone": 9234567890,
         "email": "john@cgi.com",
         "bio": "I like cats!",
-        "password": "GoodPassword"
+        "password": "GoodPassword",
+        "myIdeas": ["Idea#1", "idea12"],
+        "likedIdeas":  ["puppies", "kittens"],
+
     },
     {
         "name": "Timmy",
         "phone": 9994567890,
         "email": "timmy@cgi.com",
         "bio": "I like both!",
-        "password": "GreatPassword"
+        "password": "GreatPassword",
+        "myIdeas": ["Idea#1", "idea12"],
+        "likedIdeas":  ["puppies", "kittens"],
+
     }
 ]
