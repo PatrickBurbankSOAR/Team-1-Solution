@@ -60,6 +60,8 @@ button {
         -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 5px;
+        overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 
     
 }
@@ -115,20 +117,21 @@ textarea{
 }
 
 label {
-    padding-right: 10px;
+    
     font-weight: bold;
     margin: 0 auto;
-    margin-left: 20px;
+
 }
 
 .row {
 
-    padding-bottom: 10px;
-    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-top: 10px;
     width: 410px;
-    margin: 0 auto;
+    
 }
 
 p {
     margin: 0 auto;
+    padding-bottom: 10px;
 }
