@@ -13,7 +13,8 @@ import { SubmitIdeaPageComponent } from './components/submit-idea-page/submit-id
 import { AddRegistrationComponent } from './components/register-page/add-registration/add-registration.component';
 import { AddSubmitComponent } from './components/submit-idea-page/add-submit/add-submit.component';
 import { RegistrationMainPageComponent } from './components/register-page/registration-main-page/registration-main-page.component';
-import { IdeaCardDetailsComponent } from './components/idea-card-details/idea-card-details.component'
+import { IdeaCardDetailsComponent } from './components/idea-card-details/idea-card-details.component';
+import { OtherUserProfilePageComponent } from './components/other-user-profile-page/other-user-profile-page.component'
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { IdeaCardDetailsComponent } from './components/idea-card-details/idea-ca
     AddRegistrationComponent,
     AddSubmitComponent,
     RegistrationMainPageComponent,
-    IdeaCardDetailsComponent
+    IdeaCardDetailsComponent,
+    OtherUserProfilePageComponent
     
   ],
   imports: [
