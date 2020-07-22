@@ -27,7 +27,7 @@ export class AddRegistrationComponent implements OnInit {
 
   signUp() {
     //Would be call to backend at some point
-    this.router.navigate(['/idea-page']);
+    this.router.navigate(['/submit-idea-page']);
     console.log(name)
     //if (name != '')
 
