@@ -19,7 +19,8 @@ export class SubmitIdeaPageComponent implements OnInit {
     picture:"https://placeimg.com/600/300/animals",
     title: 'my great idea',
     description: 'to create things!',
-    contact: 'bigidea@cgi.com'
+    contact: 'bigidea@cgi.com',
+    tags: "Tags: IoT   Retail   Security"
 
   }
 

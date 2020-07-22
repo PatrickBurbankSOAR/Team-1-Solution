@@ -14,7 +14,8 @@ export class IdeaCardDetailsComponent implements OnInit {
     picture:"https://placeimg.com/600/300/animals",
     title: 'My Big Idea',
     description: 'It would be useful to create an app that allows employees in an organization to ride share.',
-    contact: 'myUser@email.com'
+    contact: 'myUser@email.com',
+    tags: "Tags: IoT   Retail   Security"
   }
 
   constructor(private router: Router) { }
