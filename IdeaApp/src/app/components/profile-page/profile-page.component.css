@@ -5,8 +5,66 @@ body{
 
 }
 
+button {
+    width: 152.6px;
+    background: #c0392b;
+    color: white;
+    outline: transparent;
+    border: transparent;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    
+    
+}
+
+#profile-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 300px;
+    border: 3px solid red;
+    margin: 0 auto;
+    
+}
+
+#upload-photo-button {
+    width: 80px;
+    height: 33px;
+    text-anchor: middle;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+#profile-name {
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
 .container{
-    justify-content: center;
+
+
+        width: 450px;
+        overflow: auto;
+        margin-top: 20px;
+        margin-bottom: auto;
+        background: #ffffff;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+
+    
 }
 
 .glyphicon {  margin-bottom: 10px;margin-right: 10px;}
@@ -40,14 +98,30 @@ width: 100px;
 
 input{
     border-radius: 1px;
-    border-style: initial;
+    border-style: solid;
     border-color: lightgray;
+    width: 420px;
 }
 
 textarea{
     border-radius: 1px;
-    border-style: initial;
+    border-style: solid;
     border-color: lightgray;
+    width: 420px;
+    height: 100px;
 }
 
+#bio-text {
+    padding: 10px;
+}
+
+label {
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.row {
+
+    padding-bottom: 10px;
+}
 
