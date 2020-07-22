@@ -12,3 +12,16 @@ button {
     background: #c0392b;
     color: white;
 }
+
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color:whitesmoke !important;
+    width: 100% !important;
+    color: crimson !important;
+    border: 1px solid crimson;
+}
+
+.btn-primary:hover {
+  background-color: crimson !important;
+  color: whitesmoke !important;
+  border: 1px solid crimson;
+}
