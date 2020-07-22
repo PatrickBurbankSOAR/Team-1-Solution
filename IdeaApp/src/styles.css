@@ -20,6 +20,10 @@ button {
     border: 1px solid crimson;
 }
 
+.crim {
+    background-color: crimson;
+}
+
 .btn-primary:hover {
   background-color: crimson !important;
   color: whitesmoke !important;
