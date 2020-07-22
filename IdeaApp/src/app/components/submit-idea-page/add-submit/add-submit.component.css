@@ -14,7 +14,7 @@
     margin-top: auto;
     margin-bottom: auto;
     background: #ffffff;
-    position: center;
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
