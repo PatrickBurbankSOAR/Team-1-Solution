@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { CARDSTACK } from 'src/app/Models/mock-cards';
 import { Router } from '@angular/router';
 
+import { LIKEDIDEAS } from 'src/app/Models/list-of-liked-ideas';
+
 @Component({
   selector: 'app-idea-card',
   templateUrl: './idea-card.component.html',
@@ -11,6 +13,7 @@ import { Router } from '@angular/router';
 })
 export class IdeaCardComponent implements OnInit {
   cards = CARDSTACK; 
+  ideas = LIKEDIDEAS;
   // public card: Card[] = CARDSTACK;
   public index:number = 0;
   userProfilePic:string;
@@ -39,12 +42,13 @@ export class IdeaCardComponent implements OnInit {
 
   nextCard() {
     this.index++;
+
   }
 
   likeCard() {
-    this.index++;
-    //Add to liked cards
-    //{{this.cards[this.index].title}}
 
+    this.index++;
+    const name = this.cards[this.index].title;
+    //this.ideas.push(name);
   }
 }
