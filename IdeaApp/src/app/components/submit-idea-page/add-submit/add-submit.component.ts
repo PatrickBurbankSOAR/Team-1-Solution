@@ -30,6 +30,7 @@ export class AddSubmitComponent implements OnInit {
     //Clear form
     this.title = this.description = '';
     this.tags = [];
+    this.router.navigate(['/idea-card']);
   }
 
   gotoIdeaPage() {
