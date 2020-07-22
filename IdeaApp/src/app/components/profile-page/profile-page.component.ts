@@ -11,6 +11,8 @@ import { LikesService } from 'src/app/services/likes.service'
 })
 export class ProfilePageComponent implements OnInit {
 
+  likedItem;
+
 
 
   profile: Profile = {
@@ -25,18 +27,41 @@ export class ProfilePageComponent implements OnInit {
 
   }
 
+  likeArray: string[]
 
 
-  constructor(private router: Router, likesservice: LikesService) { }
 
- // likeArray = this.likesservice.fetch();
+  constructor(private router: Router, private likesservice: LikesService) {
+
+
+    
+  }
+
+
 
   ngOnInit(): void {
 
+    this.likeArray = this.likesservice.fetch();
+    console.log(this.likeArray[this.likeArray.length - 1]);
+
+    this.likedItem = this.likeArray[this.likeArray.length -1];
+
+  
     
+
   }
 
   gotoIdeaPage() {
     this.router.navigate(['/idea-card']);
   }
+
+  printLikes() {
+
+    var printThis = "";
+    for (var i = 0; i < this.likeArray.length; i++) {
+      printThis += "<br>" + this.likeArray[i];
+    }
+    return printThis; // <-- to be printed to the div
+  }
+
 }

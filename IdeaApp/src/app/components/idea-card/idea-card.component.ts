@@ -15,13 +15,13 @@ import { LikesService } from 'src/app/services/likes.service'
 })
 export class IdeaCardComponent implements OnInit {
   cards = CARDSTACK; 
-  ideas: string[];
+  ideas: string[] = [];
   // public card: Card[] = CARDSTACK;
   public index:number = 0;
   userProfilePic:string;
-  likesservice: any;
 
-  constructor(private router: Router, likesservice: LikesService) { }
+
+  constructor(private router: Router, private likesservice: LikesService) { }
 
   ngOnInit(): void { 
     this.userProfilePic = 'assets/images/profilePicture.jpg'
