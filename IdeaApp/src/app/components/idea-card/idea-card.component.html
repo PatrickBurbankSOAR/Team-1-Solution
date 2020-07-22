@@ -1,51 +1,51 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <app-navbar></app-navbar>
-<div class="container h-100">
-    <div class="d-flex justify-content-center h-75">
-        <div class="card">
-            <img id="imgidea" src="{{ cardservice.cards[0].picture }}" class="img-fluid" />
-            <!--LEFT AND RIGHT BUTTONS-->
-            <!-- <div class="carousel-control-prev" data-slide="prev" (click)="goToPreviousCard()">
-                        <span class="carousel-control-prev-icon"></span>
-                    </div> 
-            
-                    <div class="carousel-control-next" data-slide="next" (click)="goToNextCard()">
-                        <span class="carousel-control-next-icon"></span>
-                    </div> -->
-            <div class="row">
-                <div class="col">
-
-                    <!--made changes to test-->
-                    <i class="fa facheck fa-4x fa-check-circle" (click)="likeCard()"></i>
-
-
-                </div>
-                <div class="col">
-
-                    <i class="fa fatimes fa-4x fa-times-circle float-right" (click)="nextCard()"></i>
-                    
-                </div>
-            </div>
-            <div class="container">
-                <div class="row ">
-                    <p class="h4 font-weight-bold text-uppercase"> {{cardservice.cards[0].title}}</p>
-                </div>
+<div class="container h-100" style="background-color: darkseagreen;">
+        <div class="h-100" style="background-color: darkblue;">
+            <div class="card" style="background-color: darkorchid;">
+                <img id="imgidea" src="{{ cardservice.cards[0].picture }}" class="img-fluid" />
+                <!--LEFT AND RIGHT BUTTONS-->
+                <!-- <div class="carousel-control-prev" data-slide="prev" (click)="goToPreviousCard()">
+                            <span class="carousel-control-prev-icon"></span>
+                        </div> 
+                
+                        <div class="carousel-control-next" data-slide="next" (click)="goToNextCard()">
+                            <span class="carousel-control-next-icon"></span>
+                        </div> -->
                 <div class="row">
-                    <p>{{cardservice.cards[0].description.substring(0,20)}}...</p>
+                    <div class="col">
+
+                        <!--made changes to test-->
+                        <i class="fa facheck fa-4x fa-check-circle" (click)="likeCard()"></i>
+
+
+                    </div>
+                    <div class="col">
+
+                        <i class="fa fatimes fa-4x fa-times-circle float-right" (click)="nextCard()"></i>
+                        
+                    </div>
                 </div>
+                <div class="container">
+                    <div class="row ">
+                        <p class="h4 font-weight-bold text-uppercase"> {{cardservice.cards[0].title}}</p>
+                    </div>
+                    <div class="row">
+                        <p>{{cardservice.cards[0].description.substring(0,20)}}...</p>
+                    </div>
 
-                <div class="row">
-                    <p>Tags: {{cardservice.cards[0].tags}}</p>
-                </div>
+                    <div class="row">
+                        <p>Tags: {{cardservice.cards[0].tags}}</p>
+                    </div>
 
 
-                <div class="row">
-                    <div class="d-flex justify-content-left links">
-                        <button router="register-page" class="ml-2" class="btn btn-primary" routerLinkActive="active"
-                            (click)="gotoIdeaCardDetails()">See more details</button>
+                    <div class="row">
+                        <div class="d-flex justify-content-left links">
+                            <button router="register-page" class="ml-2" class="btn btn-primary" routerLinkActive="active"
+                                (click)="gotoIdeaCardDetails()">See more details</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 </div>
