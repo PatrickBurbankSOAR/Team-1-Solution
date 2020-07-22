@@ -1,0 +1,41 @@
+<div class="container" id="container">
+    <img class="img-circle" id="profile-img" src="assets/images/profilePicture.jpg" />
+    <button id="upload-photo-button" class="btn login_btn">Upload</button>
+        <!--Username-->
+    <!-- <h4 id="profile-name">{{ profileService.name }} </h4> -->
+    <br>
+    <p>
+        <!--User's e-mail-->
+        <label>E-mail:</label>
+        <!-- <input class="form-control input_user" value={{profileService.email}} /> -->
+        <br />
+
+        <!--User's phone number-->
+        <label>Phone:</label>
+        <!-- <input class="form-control input_user" value={{profileService.phone}}> -->
+
+        <br>
+       <!--User's bio section-->
+        <label>About Me:</label>
+        <br>
+
+        <!-- <textarea class="form-control input_user" id="bio-text" value={{profleService.bio}}></textarea> -->
+
+    <div class="row">
+
+        <br>
+        <!--Back button-->
+        <button router="register-page" class="btn btn-primary" routerLinkActive="active" (click)="gotoIdeaPage()">Go
+            back</button>
+
+        <br>
+
+    </div>
+
+
+    <label> 's Ideas:</label>
+
+    <!--user ideas-->
+    <p>USER IDEAS WILL GO HERE</p>
+
+</div>

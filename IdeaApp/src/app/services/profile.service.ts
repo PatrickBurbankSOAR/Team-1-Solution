@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Profiles } from '../Models/Mock-Profiles';
-import { Profile } from '../Models/Profile-Info';
+
 
 
 @Injectable({
@@ -8,17 +8,16 @@ import { Profile } from '../Models/Profile-Info';
 })
 export class ProfileService {
 
-  profiles = Profiles;
-
+  profiles:any = Profiles;
+  
   constructor() {}
 
-  ngOnInit() {}
+  shiftProfile()
+  {
+    this.profiles.shift();
+  }
 
-  addProfile( )
 
-{
-  new Profile();
-}
 
   
   

@@ -13,32 +13,34 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" name = "name" [(ngModel)] ="name"placeholder="Your Name *" value=""/>
+                                <input required type="text" class="form-control" name = "name" [(ngModel)] ="name"placeholder="Your Name *" value="" />
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name = "phone" [(ngModel)] = "phone" placeholder="Phone Number *" value=""/>
+                                <input type="text" class="form-control" name = "phone" [(ngModel)] = "phone" placeholder="Phone Number *" value="" required/>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name = "bio" [(ngModel)] = "bio" placeholder="Write Something About Yourself *" value="" style="width: 330px; height: 100px;"/>
+                                <input type="text" class="form-control" name = "bio" [(ngModel)] = "bio" placeholder="Write Something About Yourself *" value="" style="width: 330px; height: 100px;" required/>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name = "Tags" placeholder="Add Some Topics You Are Interested In '#..'" value="" style="width: 330px;"/>
+                                <input type="text" class="form-control" name = "Tags" placeholder="Add Some Topics You Are Interested In '#..'" value="" style="width: 330px;" />
                             </div>
                         </div>
                         <div class="col-md-6">
                             
                             <div class="form-group">
-                                <input type="text" class="form-control" name = "Email" [(ngModel)] = "email" placeholder="Email" value=""/>
+                                <input type="text" class="form-control" name = "Email" [(ngModel)] = "email" placeholder="Email" value="" required/>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name = "Password" [(ngModel)] = "password" placeholder="Your Password *" value=""/>
+                                <input type="text" class="form-control" name = "Password" [(ngModel)] = "password" placeholder="Your Password *" value="" required/>
                             </div>
                             
                         </div>
                         
                     </div>
+
                     <button router="register-page" class="ml-2" class="btn btn-primary" routerLinkActive="active"
                     (click)="signUp()">Sign Up and Create Your First CGIdea!</button>
+                    
                     <!-- <button type="button" class="btnSubmit" (onclick)="signUp()">Submit</button> -->
                     <p>Return to
                     <a router="register-page" class="ml-2" style="cursor: pointer; color:blue" routerLinkActive="active" (click)="gotoLogin()">login?</a>
