@@ -14,14 +14,7 @@ export class ProfileCreationService {
   private email;
   private phone;
   private bio;
-  //private tags;
-
-  public id;
-  public pic;
-  public title;
-  public desc;
-  public contact;
-  public tags;
+  private tags;
 
   public likedCards: Card[] = [];
   public currentCard: Card = null;
@@ -29,7 +22,12 @@ export class ProfileCreationService {
 
 addCard(card: Card){
   this.likedCards.push(card);
-  console.log("liked card: ", this.likedCards);
+  console.log("liked cards: ", this.likedCards);
+}
+
+myIdeaCards(card: Card){
+  this.myCards.push(card);
+  console.log("my cards: ", this.myCards);
 }
 
 
