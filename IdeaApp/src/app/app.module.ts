@@ -18,8 +18,8 @@ import { OtherUserProfilePageComponent } from './components/other-user-profile-p
 import { NavbarComponent } from './navbar/navbar.component';
 import { OutOfCardsComponent } from './components/out-of-cards/out-of-cards.component';
 import { LikedCardsComponent } from './components/liked-cards/liked-cards.component';
+import { AngularFileUploaderModule } from 'angular-file-uploader';
 
-// import { SummernoteComponent } from './components/summernote/summernote.component'
 
 @NgModule({
   declarations: [
@@ -37,14 +37,9 @@ import { LikedCardsComponent } from './components/liked-cards/liked-cards.compon
     IdeaCardDetailsComponent,
     OtherUserProfilePageComponent,
     NavbarComponent,
-<<<<<<< HEAD
     OutOfCardsComponent,
-    LikedCardsComponent,
-    // SummernoteComponent
-=======
-    OutOfCardsComponent
->>>>>>> 288854e226e017950e688c9c32b0117c931f83e2
-    
+    LikedCardsComponent
+   
   ],
   imports: [
     BrowserModule,
