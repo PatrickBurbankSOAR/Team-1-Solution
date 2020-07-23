@@ -14,30 +14,43 @@
         <!-- <div class="card"> -->
 
             <!--This is the header image-->
-            <img class="img-fluid" style="margin-top: 10px;" src="{{ cardservice.cards[0].picture }}">
+            <img class="img-fluid" style="margin-top: 10px;" src="{{ profilecreationservice.currentCard == null ? cardservice.cards[0].picture : profilecreationservice.currentCard.picture }}">
+
 
             <div class="card-block">
                 
 
                 <!--Idea Title-->
-                <h4 class="card-title mt-3">{{cardservice.cards[0].title}}</h4>
+                <h4 class="card-title mt-3">{{ profilecreationservice.currentCard == null ? cardservice.cards[0].title : profilecreationservice.currentCard.title }}</h4>
 
                 <!--Idea Description-->
-                <div class="card-text">{{cardservice.cards[0].description}}</div>
+                <div class="card-text">{{ profilecreationservice.currentCard == null ? cardservice.cards[0].description : profilecreationservice.currentCard.description }}</div>
 
                 <br>
 
                 <!--Contact Information-->
+<<<<<<< HEAD
                 <div class="row" style="padding-left: 13px;">
                     <p>Contact: <button class="btn-tags"
                             (click)="gotoUserProfile()">{{ profileservice.profiles[0].name }}</button></p>
                 </div>
+=======
+                <div class="row">
+                    <!-- <p>Contact: <button class="btn-tags"
+                            (click)="gotoUserProfile()">{{ profilecreationservice.currentCard == null ? cardservice.cards[0].name : profilecreationservice.currentCard.name }}</button></p>
+                </div> -->
+>>>>>>> aead3cc71bea2ba8aa2db8c97a1c9de396afd8df
 
 
 
                 <!--Idea Tags-->
+<<<<<<< HEAD
                 <div class="row" style="padding-left: 13px;">
                     <p>Tags: <button class="btn-tags">{{cardservice.cards[0].tags}}</button> </p>
+=======
+                <div class="row">
+                    <p>Tags: <button class="btn-tags">{{ profilecreationservice.currentCard == null ? cardservice.cards[0].tags : profilecreationservice.currentCard.tags }}</button> </p>
+>>>>>>> aead3cc71bea2ba8aa2db8c97a1c9de396afd8df
                 </div>
 
                 <a router="register-page" class="ml-2" class="btn btn-primary" routerLinkActive="active"
