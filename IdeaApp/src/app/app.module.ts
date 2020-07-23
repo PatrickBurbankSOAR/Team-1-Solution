@@ -17,7 +17,11 @@ import { IdeaCardDetailsComponent } from './components/idea-card-details/idea-ca
 import { OtherUserProfilePageComponent } from './components/other-user-profile-page/other-user-profile-page.component'
 import { NavbarComponent } from './navbar/navbar.component';
 import { OutOfCardsComponent } from './components/out-of-cards/out-of-cards.component';
+<<<<<<< HEAD
+import { AngularFileUploaderModule } from "angular-file-uploader";
+=======
 // import { SummernoteComponent } from './components/summernote/summernote.component'
+>>>>>>> f805c7485449e806165690dbf48e6f166e2fc6ac
 
 @NgModule({
   declarations: [
@@ -35,14 +39,14 @@ import { OutOfCardsComponent } from './components/out-of-cards/out-of-cards.comp
     IdeaCardDetailsComponent,
     OtherUserProfilePageComponent,
     NavbarComponent,
-    OutOfCardsComponent,
-    // SummernoteComponent
+    OutOfCardsComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AngularFileUploaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

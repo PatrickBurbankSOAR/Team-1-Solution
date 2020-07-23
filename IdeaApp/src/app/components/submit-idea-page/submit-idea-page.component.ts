@@ -6,6 +6,7 @@ import { Card } from 'src/app/Models/card-info'
   templateUrl: './submit-idea-page.component.html',
   styleUrls: ['./submit-idea-page.component.css']
 })
+
 export class SubmitIdeaPageComponent implements OnInit {
 
   
