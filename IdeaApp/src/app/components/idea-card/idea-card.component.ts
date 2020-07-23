@@ -59,10 +59,6 @@ export class IdeaCardComponent implements OnInit {
       console.log("End of array");
       this.outOfCards();
     }
-<<<<<<< HEAD
-    console.log(this.length);
-=======
->>>>>>> e7b6695d011b178fc7acdb9c75160d74d871bd3c
   }
 
   likeCard() {
