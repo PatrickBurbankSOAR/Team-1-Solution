@@ -37,13 +37,14 @@ export class IdeaCardComponent implements OnInit {
   }
 
   outOfCards(){
-    this.cards[0].id = 0;
-    this.cards[0].title = "";
-    this.cards[0].description = "";
-    this.cards[0].picture = "";
-    this.cards[0].tags = "";
-    document.getElementById("cardcontent").hidden = true;
-    document.getElementById("outofIdeas").hidden = false;
+    // this.cards[0].id = 0;
+    // this.cards[0].title = "";
+    // this.cards[0].description = "";
+    // this.cards[0].picture = "";
+    // this.cards[0].tags = "";
+    // document.getElementById("cardcontent").hidden = true;
+    // document.getElementById("outofIdeas").hidden = false;
+    this.router.navigate(['/out-of-cards']);
 
   }
 
@@ -52,13 +53,12 @@ export class IdeaCardComponent implements OnInit {
     this.profileService.shiftProfile();
     this.length = this.cardservice.cards.length;
     if (this.length > 1) {
-      console.log(this.length);
+      //console.log(this.length);
       this.cardservice.shiftCard();
     } else {
       console.log("End of array");
       this.outOfCards();
     }
-    console.log(this.length);
   }
 
   likeCard() {
@@ -69,7 +69,7 @@ export class IdeaCardComponent implements OnInit {
 
     this.length = this.cardservice.cards.length;
     if (this.length > 1) {
-      console.log(this.length);
+      //console.log(this.length);
       this.cardservice.shiftCard();
     } else {
         console.log("End of array");

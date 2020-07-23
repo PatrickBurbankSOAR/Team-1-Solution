@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 // import { User } from './user';
 import { Profile } from 'src/app/Models/Profile-Info'
 import { Router } from '@angular/router';
-import { LikesService } from 'src/app/services/likes.service'
-import { ProfileCreationService } from 'src/app/services/profile-creation.service'
-import { AddIdeaService } from 'src/app/services/add-idea.service'
+import { LikesService } from 'src/app/services/likes.service';
+import { ProfileCreationService } from 'src/app/services/profile-creation.service';
+import { AddIdeaService } from 'src/app/services/add-idea.service';
+import { CardServiceService } from 'src/app/services/card-service.service';
 
 @Component({
   selector: 'app-profile-page',
@@ -19,6 +20,7 @@ export class ProfilePageComponent implements OnInit {
   email;
   phone;
   bio;
+  tags;
 
 
 
@@ -35,10 +37,10 @@ export class ProfilePageComponent implements OnInit {
   // }
 
   likeArray: string[]
+  public length:number = 0;
 
 
-
-  constructor(private router: Router, private addideaservice: AddIdeaService, private likesservice: LikesService, private profilecreationservice: ProfileCreationService) {
+  constructor(private router: Router, private addideaservice: AddIdeaService, private likesservice: LikesService, private profilecreationservice: ProfileCreationService, public cardservice: CardServiceService) {
 
 
     
@@ -58,6 +60,7 @@ export class ProfilePageComponent implements OnInit {
     this.email = this.profilecreationservice.fetchEmail();
     this.phone = this.profilecreationservice.fetchPhone();
     this.bio = this.profilecreationservice.fetchBio();
+    this.tags = this.profilecreationservice.fetchTags();
 
     //Displaying created item
     this.createdItem = this.addideaservice.fetchIdea();
@@ -67,10 +70,10 @@ export class ProfilePageComponent implements OnInit {
   saveChanges() {
 
     // this.email = this.profilecreationservice.fetchEmail();
-    this.profilecreationservice.updateInfo(this.email).subscribe(email => this.email = email);
-    this.email = this.profilecreationservice.fetchEmail();
+    // this.profilecreationservice.updateInfo(this.email).subscribe(email => this.email = email);
+    // this.email = this.profilecreationservice.fetchEmail();
 
-    console.log(this.email)
+    // console.log(this.email)
 
     // window.location.reload();
 
@@ -81,9 +84,22 @@ export class ProfilePageComponent implements OnInit {
     
   }
 
-  gotoIdeaPage() {
-    this.router.navigate(['/idea-card']);
+  outOfCards(){
+    this.router.navigate(['/out-of-cards']);
   }
+
+  gotoIdeaPage() {
+
+    this.length = this.cardservice.cards.length;
+    if (this.length > 1) {
+      this.router.navigate(['/idea-card'])
+    }
+    else {
+        //console.log("End of array");
+        this.outOfCards()
+    }
+  }
+
 
   gotoIdeaDetails() {
     this.router.navigate(['/idea-card-details']);
