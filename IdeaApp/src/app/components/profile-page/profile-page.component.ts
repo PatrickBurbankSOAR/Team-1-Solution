@@ -6,6 +6,7 @@ import { LikesService } from 'src/app/services/likes.service';
 import { ProfileCreationService } from 'src/app/services/profile-creation.service';
 import { AddIdeaService } from 'src/app/services/add-idea.service';
 import { CardServiceService } from 'src/app/services/card-service.service';
+import { Card } from 'src/app/Models/card-info';
 
 @Component({
   selector: 'app-profile-page',
@@ -47,14 +48,17 @@ export class ProfilePageComponent implements OnInit {
   }
 
 
-
+  gotoMoreDetails(card: Card): void {
+    this.profilecreationservice.currentCard = card;
+    this.router.navigate(['/idea-card-details/']);
+  }
   ngOnInit(): void {
 
     //DIsplaying liked item
     this.likeArray = this.likesservice.fetch();
     console.log(this.likeArray[this.likeArray.length - 1]);
     this.likedItem = this.likeArray[this.likeArray.length -1];
-
+    console.log(this.profilecreationservice.likedCards)
     //Hooking up registration info
     this.name = this.profilecreationservice.fetchName();
     this.email = this.profilecreationservice.fetchEmail();
