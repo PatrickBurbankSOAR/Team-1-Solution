@@ -123,3 +123,8 @@ label {
     color: rgba(0, 0, 0, .87);
 }
 
+p {
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
