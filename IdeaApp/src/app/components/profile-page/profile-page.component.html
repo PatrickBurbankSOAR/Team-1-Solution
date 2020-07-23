@@ -1,19 +1,27 @@
 <app-navbar></app-navbar>
 
 <form class="form">
+
     <div class="container register-form">
+
+
         <div class="d-flex justify-content-center">
+
             <div class="form">
+
                 <div class="note">
                     <p>My Profile</p>
                 </div>
+                
 
-                <br>
+
+                <div class="form-content">
+
 
                 <div class="row"><img class="img-circle" id="profile-img" src="assets/images/profilePicture.jpg" />
                 </div>
 
-                <div class="row"><button id="upload-photo-button" class="btn login_btn">Upload</button></div>
+                <div class="row"><button id="upload-photo-button" >Upload</button></div>
 
                 <h4 id="profile-name">{{name}} </h4>
 
@@ -23,7 +31,7 @@
                         <div class="form-group">
 
                             <!--Email-->
-                            <label>E-mail:</label>
+                           <div class="row"><label>E-mail:</label></div> 
                             <input type="text" class="form-control" value={{email}} style="width: 300px;" />
 
                         </div>
@@ -31,7 +39,7 @@
                         <div class="form-group">
 
                             <!--Phone-->
-                            <label>Phone:</label>
+                            <div class="row"><label>Phone:</label></div>
                             <input type="text" class="form-control" value={{phone}} style="width: 300px;" />
 
                         </div>
@@ -39,39 +47,45 @@
                         <div class="form-group">
 
                             <!--Bio-->
-                            <label>About Me:</label>
+                            <div class="row"><label>About Me:</label></div>
                             <textarea class="form-control input_user" id="bio-text" value={{bio}}
                                 style="width: 300px"></textarea>
+                                
 
                         </div>
+
+                        <div class="form-group">
+
+                            <!--Tags-->
+                            <label>Tags:</label>
+                            <p><button class="ml-2" class="btn btn-primary"  >{{tags}}</button></p>
+                
+
+                        </div>
+
 
                     </div>
                     <div class="col-md-6">
                     </div>
                 </div>
 
-                <div class="row">
-                    <button type="button" class="btnSubmit" (click)="saveChanges()">Save Changes</button>
-                </div>
 
-                <div class="row">
-                    <button type="button" class="btnSubmit" (click)="gotoIdeaPage()">Go Back</button>
-                </div>
+                    <button type="button" class="btn-primary" (click)="saveChanges()">Save Changes</button>
 
-                <div class="row">
-                    <label>My Ideas:</label>
+                    <button type="button" class="btn-primary" (click)="gotoIdeaPage()">Go Back</button>
+
+                    <br>
+
+
+                    <div class="row"><label>My Ideas:</label></div>
                     <a router="register-page" class="ml-2" style="cursor: pointer; color:blue" routerLinkActive="active"
                         (click)="gotoLikedIdeas()">{{createdItem}}</a>
-                </div>
-
-                <div class="row">
-                    <label>Liked Ideas:</label>
-                    <br>
+            
+                        <div class="row"><label>Liked Ideas:</label></div>
                     <a router="register-page" class="ml-2" style="cursor: pointer; color:blue" text-align="center" routerLinkActive="active"
                         (click)="gotoLikedIdeas()">{{likedItem}}</a>
 
                 </div>
-
 
             </div>
         </div>

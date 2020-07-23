@@ -10,7 +10,7 @@
 }
 .form-content
 {
-    height: 400px;
+    height: auto;
     width: 350px;
     margin-top: auto;
     margin-bottom: auto;
@@ -40,4 +40,8 @@
     cursor: pointer;
     background: #c0392b !important;
     color: #fff;
+}
+
+#bio{
+    justify-content: start;
 }

@@ -20,6 +20,7 @@ export class ProfilePageComponent implements OnInit {
   email;
   phone;
   bio;
+  tags;
 
 
 
@@ -59,6 +60,7 @@ export class ProfilePageComponent implements OnInit {
     this.email = this.profilecreationservice.fetchEmail();
     this.phone = this.profilecreationservice.fetchPhone();
     this.bio = this.profilecreationservice.fetchBio();
+    this.tags = this.profilecreationservice.fetchTags();
 
     //Displaying created item
     this.createdItem = this.addideaservice.fetchIdea();
@@ -68,10 +70,10 @@ export class ProfilePageComponent implements OnInit {
   saveChanges() {
 
     // this.email = this.profilecreationservice.fetchEmail();
-    this.profilecreationservice.updateInfo(this.email).subscribe(email => this.email = email);
-    this.email = this.profilecreationservice.fetchEmail();
+    // this.profilecreationservice.updateInfo(this.email).subscribe(email => this.email = email);
+    // this.email = this.profilecreationservice.fetchEmail();
 
-    console.log(this.email)
+    // console.log(this.email)
 
     // window.location.reload();
 

@@ -7,10 +7,44 @@ import { CardServiceService } from 'src/app/services/card-service.service';
 @Component({
   selector: 'app-add-submit',
   templateUrl: './add-submit.component.html',
-  styleUrls: ['./add-submit.component.css']
+  styleUrls: ['./add-submit.component.css'],
+  
 })
 export class AddSubmitComponent implements OnInit {
+  afuConfig = {
+    multiple: false,
+    formatsAllowed: ".jpg,.png",
+    maxSize: "1",
+    uploadAPI:  {
 
+    //Would be directed to the backend if we had one
+    //   url:"https://example-file-upload-api",
+    //   method:"POST",
+    //   headers: {
+    //  "Content-Type" : "text/plain;charset=UTF-8",
+    //   "Authorization" : `Bearer ${token}`
+    //  },
+      params: {
+        'page': '1'
+      },
+      responseType: 'blob',
+    },
+    theme: "dragNDrop",
+    hideProgressBar: true,
+    hideResetBtn: false,
+    hideSelectBtn: false,
+    fileNameIndex: true,
+    replaceTexts: {
+      selectFileBtn: 'Select Files',
+      resetBtn: 'Reset',
+      uploadBtn: 'Upload',
+      dragNDropBox: 'Drag N Drop',
+      attachPinBtn: 'Attach Files...',
+      afterUploadMsg_success: 'Successfully Uploaded !',
+      afterUploadMsg_error: 'Upload Failed !',
+      sizeLimit: 'Size Limit'
+    }
+};
   title: string;
   description: string;
   tags: string[];
@@ -23,7 +57,6 @@ export class AddSubmitComponent implements OnInit {
   }
 
   onSubmit() {
-
 
     this.addideaservice.saveIdea(this.title);
 
