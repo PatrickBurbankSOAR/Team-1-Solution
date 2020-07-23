@@ -46,7 +46,14 @@ export class ProfilePageComponent implements OnInit {
 
 
   gotoMoreDetails(card: Card): void {
+
     this.profilecreationservice.currentCard = card;
+    this.profilecreationservice.myCards.forEach(e => { if (e == this.profilecreationservice.currentCard) {
+      this.profilecreationservice.currentCard = null;
+    }
+      
+    });
+
     this.router.navigate(['/idea-card-details/']);
   }
 

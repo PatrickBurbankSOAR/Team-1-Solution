@@ -31,11 +31,11 @@ export class AddRegistrationComponent implements OnInit {
   signUp() {
 
     console.log(this.name)
-
+    if (this.name  != null && this.email  != null && this.phone  != null && this.bio  != null && this.tags != null) {
     this.profilecreationservice.saveInfo(this.name, this.email, this.phone, this.bio, this.tags);
 
     this.router.navigate(['/submit-idea-page']);
-    
+    }
  
 
   }

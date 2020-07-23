@@ -37,6 +37,7 @@ export class IdeaCardComponent implements OnInit {
   }
 
   gotoIdeaCardDetails() {
+    this.profilecreationservice.currentCard = this.cardservice.cards[0];
     this.router.navigate(['/idea-card-details']);
   }
 

@@ -19,6 +19,11 @@ export class IdeaCardDetailsComponent implements OnInit {
   constructor(private router: Router, public cardservice: CardServiceService, public profileservice: ProfileService, public profilecreationservice: ProfileCreationService) { }
 
   ngOnInit(): void {
+    if (this.cardservice.cards != null && this.profilecreationservice.currentCard != null) {
+    document.getElementById("hey").hidden = false;
+    document.getElementById("contact").innerText = this.cardservice.cards[0].contact;
+    }
+
   }
 
   outOfCards(){
