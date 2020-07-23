@@ -1,14 +1,10 @@
-.card { 
-  max-width: 500px;
-  }
 
   .form-content
   {
-    width: 400px;
+    width: 370px;
     margin-top: auto;
     margin-bottom: auto;
     background: #ffffff;
-    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -19,6 +15,7 @@
     border-radius: 5px;
     text-align: center;   
         
+    
 }
   
   /* On mouse-over, add a deeper shadow */
@@ -31,9 +28,10 @@
     object-fit: cover;
     border-radius: 300px;
     border: 3px solid red;
-
-    max-height: 300px;
-    margin: 0 auto;
+    margin: 10px;
+    
+    width:350px;
+    height:250px;
   }
 
   #details {
