@@ -37,13 +37,14 @@ export class IdeaCardComponent implements OnInit {
   }
 
   outOfCards(){
-    this.cards[0].id = 0;
-    this.cards[0].title = "";
-    this.cards[0].description = "";
-    this.cards[0].picture = "";
-    this.cards[0].tags = "";
-    document.getElementById("cardcontent").hidden = true;
-    document.getElementById("outofIdeas").hidden = false;
+    // this.cards[0].id = 0;
+    // this.cards[0].title = "";
+    // this.cards[0].description = "";
+    // this.cards[0].picture = "";
+    // this.cards[0].tags = "";
+    // document.getElementById("cardcontent").hidden = true;
+    // document.getElementById("outofIdeas").hidden = false;
+    this.router.navigate(['/out-of-cards']);
 
   }
 
@@ -58,10 +59,6 @@ export class IdeaCardComponent implements OnInit {
       console.log("End of array");
       this.outOfCards();
     }
-<<<<<<< HEAD
-=======
-    console.log(this.length);
->>>>>>> 39afcc8167a6e86109527da4921f939746f61d24
   }
 
   likeCard() {
