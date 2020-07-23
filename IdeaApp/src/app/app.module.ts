@@ -50,7 +50,7 @@ import { LikedCardsComponent } from './components/liked-cards/liked-cards.compon
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    //AngularFileUploaderModule
+    AngularFileUploaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
