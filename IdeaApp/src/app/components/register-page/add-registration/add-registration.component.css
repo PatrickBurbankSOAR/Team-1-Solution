@@ -41,3 +41,7 @@
     background: #c0392b !important;
     color: #fff;
 }
+
+#bio{
+    justify-content: start;
+}
