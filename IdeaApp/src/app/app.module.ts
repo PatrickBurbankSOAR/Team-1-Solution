@@ -42,7 +42,7 @@ import { AngularFileUploaderModule } from "angular-file-uploader";
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    AngularFileUploaderModule
+    //AngularFileUploaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
