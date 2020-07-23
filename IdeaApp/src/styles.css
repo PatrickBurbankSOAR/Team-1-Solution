@@ -27,6 +27,24 @@ button {
     margin-bottom: 10px;
 }
 
+.btn-tags {
+    background-color:whitesmoke !important;
+    width: 80% !important;
+    height: 40%;
+    color: crimson !important;
+    border: 1px solid crimson !important;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 12px;
+
+}
+
+.btn-tags:hover {
+    background-color: crimson !important;
+    color: whitesmoke !important;
+    border: 1px solid crimson;
+  }
+
 .btn-primary:hover {
   background-color: crimson !important;
   color: whitesmoke !important;
