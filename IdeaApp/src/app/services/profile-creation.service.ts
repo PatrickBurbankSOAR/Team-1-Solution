@@ -17,6 +17,7 @@ export class ProfileCreationService {
   private tags;
 
   public likedCards: Card[] = [];
+  public myCards: Card[] = [];
   public currentCard: Card = null;
   
 
