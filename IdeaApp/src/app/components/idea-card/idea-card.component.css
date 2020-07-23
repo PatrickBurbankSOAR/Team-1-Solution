@@ -38,6 +38,9 @@
     object-fit: cover;
     border-radius: 300px;
     border: 3px solid red;
+    max-width: 500px;
+    max-height: 300px;
+    margin: 0 auto;
   }
 
   #details {
