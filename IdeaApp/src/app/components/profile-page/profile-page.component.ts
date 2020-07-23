@@ -20,6 +20,7 @@ export class ProfilePageComponent implements OnInit {
   email;
   phone;
   bio;
+  tags;
 
 
 
@@ -59,6 +60,7 @@ export class ProfilePageComponent implements OnInit {
     this.email = this.profilecreationservice.fetchEmail();
     this.phone = this.profilecreationservice.fetchPhone();
     this.bio = this.profilecreationservice.fetchBio();
+    this.tags = this.profilecreationservice.fetchTags();
 
     //Displaying created item
     this.createdItem = this.addideaservice.fetchIdea();

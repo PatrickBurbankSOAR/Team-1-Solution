@@ -12,15 +12,17 @@ export class ProfileCreationService {
   private email;
   private phone;
   private bio;
+  private tags;
 
 
 
-saveInfo(name, email, phone, bio) {
+saveInfo(name, email, phone, bio, tags) {
 
   this.name = name;
   this.email = email;
   this.phone = phone;
   this.bio = bio;
+  this.tags = tags;
 
 }
 
@@ -52,5 +54,9 @@ fetchPhone() {
 fetchBio() {
 
   return this.bio;
+}
+
+fetchTags() {
+  return this.tags;
 }
 }
