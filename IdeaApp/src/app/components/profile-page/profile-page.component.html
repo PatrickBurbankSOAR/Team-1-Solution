@@ -1,21 +1,24 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <app-navbar></app-navbar>
 
-<form class="form">
 
-    <div class="container register-form">
+    <!-- <div class="container h-100 justify-content-center d-flex align-items-center"> -->
 
+        <div class="note justify-content-center" style="margin-top: 20px;">
+            <p >My Profile</p>
+        </div>
+        <div class="container register-form">
+
+            
 
         <div class="d-flex justify-content-center">
-
-            <div class="form">
-
-                <div class="note">
-                    <p>My Profile</p>
-                </div>
-                
+            
 
 
-                <div class="form-content">
+        <div class="card" id="cardcontent">
+
+            <div class="card-body">
 
 
                 <div class="row"><img class="img-circle" id="profile-img" src="assets/images/profilePicture.jpg" />
@@ -54,14 +57,6 @@
 
                         </div>
 
-                        <div class="form-group">
-
-                            <!--Tags-->
-                            <label>Tags:</label>
-                            <p><button class="ml-2" class="btn btn-primary"  >{{tags}}</button></p>
-                
-
-                        </div>
 
 
                     </div>
@@ -78,21 +73,23 @@
 
 
                     <div class="row"><label>My Ideas:</label></div>
-                    <a router="register-page" class="ml-2" style="cursor: pointer; color:blue" routerLinkActive="active"
-                        (click)="gotoLikedIdeas()">{{createdItem}}</a>
-            
+                    <ul>
+                        <li *ngFor="let Card of profilecreationservice.myCards"(click) = "gotoMoreDetails(Card);">
+                            <span>{{Card.title}}</span>
+                        </li>
+                    </ul>
 
                         <div class="row"><label>Liked Ideas:</label></div>
                         <ul>
                             <a *ngFor="let Card of profilecreationservice.likedCards" (click)=gotoMoreDetails(Card);>
                                 <span>{{ Card.title }} </span>
                             </a>
-                        <!-- <a router="register-page" class="ml-2" style="cursor: pointer; color:blue" text-align="center" routerLinkActive="active"
-                        (click)="gotoLikedIdeas()">{{likedItem}}</a> -->
+
                     </ul>
                 </div>
 
             </div>
         </div>
     </div>
-</form>
+    <!-- </div> -->
+<!-- </form> -->
