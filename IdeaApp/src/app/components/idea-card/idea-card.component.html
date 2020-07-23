@@ -40,21 +40,19 @@
                     <p>{{cardservice.cards[0].description.substring(0,20)}}...</p>
                 </div>
 
-                <div class="row">
-                    <p>Tags: <button class="ml-2" class="btn btn-primary"  >{{cardservice.cards[0].tags}}</button></p>
-                </div>
-
-
+                
                 <div class="row">
                     <!-- <div class="d-flex justify-content-left links"> -->
                         <button router="register-page" class="ml-2" class="btn btn-primary" routerLinkActive="active"
                             (click)="gotoIdeaCardDetails()">See more details</button>
-
-                            
                     <!-- </div> -->
                 </div>
 
-                <br>
+                <div class="row">
+                    <p>Tags: <button class="ml-2" class="btn-tags" >{{cardservice.cards[0].tags}}</button></p>
+                </div>
+
+
             </div>
         </div>
     </div>

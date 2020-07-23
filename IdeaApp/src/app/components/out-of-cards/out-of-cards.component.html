@@ -1,13 +1,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="container h-100" style="background-color: crimson;">
+<div class="form-content" >
     <app-navbar></app-navbar>
     <div class="d-flex justify-content-center h-75">
         <div class="card">
             <img id="imgidea" src="assets/images/logo.png" class="img-fluid" />
                 
-            <H1>Out of cards!!</H1>
-            <H2> New cards in 24 hours</H2>
+            <H1>Out of Cards</H1>
+            <h2 id="msg"> New cards tomorrow morning! </h2>
+
+            <br>
+
+            <button class="btn-primary" (click)="goToIdeaCard()">Go Back</button>
+
+            <br>
         </div>
+
+        
+
     </div>
 </div>

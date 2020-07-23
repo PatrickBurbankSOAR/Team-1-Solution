@@ -1,10 +1,18 @@
 
 H1 { 
-    text-align: center
+    text-align: center;
 }
 
 H2 { 
-    text-align: center
+    text-align: center;
+    padding: 10px;
 }
 
+#imgidea {
+
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
