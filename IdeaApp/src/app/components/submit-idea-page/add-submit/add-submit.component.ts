@@ -80,6 +80,7 @@ export class AddSubmitComponent implements OnInit {
 
   
   outOfCards(){
+    this.profilecreationservice.currentCard = null; 
     this.router.navigate(['/out-of-cards']);
   }
 

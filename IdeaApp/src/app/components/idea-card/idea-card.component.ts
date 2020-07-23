@@ -48,6 +48,7 @@ export class IdeaCardComponent implements OnInit {
     // this.cards[0].tags = "";
     // document.getElementById("cardcontent").hidden = true;
     // document.getElementById("outofIdeas").hidden = false;
+    this.profilecreationservice.currentCard = null; 
     this.router.navigate(['/out-of-cards']);
 
   }
