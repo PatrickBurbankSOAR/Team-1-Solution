@@ -64,6 +64,18 @@ export class ProfilePageComponent implements OnInit {
 
   }
 
+  saveChanges() {
+    this.profilecreationservice.saveInfo(this.name, this.email, this.phone, this.bio);
+
+    window.location.reload();
+
+    this.email = this.profilecreationservice.fetchEmail();
+    this.phone = this.profilecreationservice.fetchPhone();
+    this.bio = this.profilecreationservice.fetchBio();
+
+    
+  }
+
   gotoIdeaPage() {
     this.router.navigate(['/idea-card']);
   }

@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   selector: 'app-add-registration',
   templateUrl: './add-registration.component.html',
   styleUrls: ['./add-registration.component.css']
+
 })
 export class AddRegistrationComponent implements OnInit {
 
@@ -27,11 +28,10 @@ export class AddRegistrationComponent implements OnInit {
   }
 
   signUp() {
-    //Would be call to backend at some point
 
     console.log(this.name)
 
-    this.profilecreationservice.saveInfo(this.name, this.email, this.phone, this.bio);
+    this.profilecreationservice.updateInfo(this.email, this.phone, this.bio);
 
     this.router.navigate(['/submit-idea-page']);
     

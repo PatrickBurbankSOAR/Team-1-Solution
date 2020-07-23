@@ -23,6 +23,13 @@ saveInfo(name, email, phone, bio) {
 
 }
 
+updateInfo(email, phone, bio) {
+
+  this.email = email;
+  this.phone = phone;
+  this.bio = bio;
+}
+
 fetchName() { 
 
   return this.name;
