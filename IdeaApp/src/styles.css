@@ -24,6 +24,7 @@ button {
     width: 100% !important;
     color: crimson !important;
     border: 1px solid crimson !important;
+    margin-bottom: 10px;
 }
 
 .btn-primary:hover {
