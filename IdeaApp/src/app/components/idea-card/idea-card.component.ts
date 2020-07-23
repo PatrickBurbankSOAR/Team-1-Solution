@@ -78,8 +78,8 @@ export class IdeaCardComponent implements OnInit {
  
     console.log(this.cardservice.cards[0].id);
     console.log(this.cardservice.cards[0].title);
-    this.profilecreationservice.addCard(this.cardservice.cards[0].id, this.cardservice.cards[0].picture, this.cardservice.cards[0].title, this.cardservice.cards[0].description, this.cardservice.cards[0].contact, this.cardservice.cards[0].tags);
-
+    //this.profilecreationservice.addCard(this.cardservice.cards[0].id, this.cardservice.cards[0].picture, this.cardservice.cards[0].title, this.cardservice.cards[0].description, this.cardservice.cards[0].contact, this.cardservice.cards[0].tags);
+    this.profilecreationservice.addCard(this.cardservice.cards[0]);
     //console.log(this.length); //6
     //console.log(this.cardservice.index); //5
 

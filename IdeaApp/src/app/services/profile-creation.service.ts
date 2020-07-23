@@ -14,7 +14,7 @@ export class ProfileCreationService {
   private email;
   private phone;
   private bio;
-  private tags;
+  //private tags;
 
   public id;
   public pic;
@@ -23,37 +23,14 @@ export class ProfileCreationService {
   public contact;
   public tags;
 
-  public likedCards: Card[];
+  public likedCards: Card[] = [];
   
 
+addCard(card: Card){
+  this.likedCards.push(card);
+  console.log("liked card: ", this.likedCards);
+}
 
-addCard(id: number, picture: string, title: string, description: string, contact: string, tags: string){
-  console.log("Add card");
-  //console.log("Cards currently: " + cards);
-  //var i = 0;
-  //var j = 0;
-  //let tempCard: Card = {id, picture, title, description, contact, tags};
-  //this.likedCards.push({id, picture, title, description, contact, tags});
-  this. id = id; 
-  this.pic = picture; 
-  this.title = title;
-  this.desc = description;
-  this.contact = contact
-  this.tags = tags;
-  
-
-  // for (j = 0; j < this.likedCards.length; j++){
-  //     console.log("LikedCards: " + this.likedCards[0][j]);
-  //   }
-  }
-
-
-// addCard(id: number, picture: string, title: string, description: string, contact: string, tags: string){
-//   console.log("Passed: " + id);
-//   console.log("Passed: " + tags);
-
-
-// }
 
 viewLikedCards(){
   return this.likedCards;
