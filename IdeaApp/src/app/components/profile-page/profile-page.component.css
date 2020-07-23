@@ -1,4 +1,4 @@
-button {
+/* button {
     width: 132.6px;
     background: #c0392b;
     color: white;
@@ -8,42 +8,19 @@ button {
 
 }
 
-#profile-img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 300px;
-    border: 3px solid red;
-    margin: 0 auto;
-    
-    
-    
-}
 
-#upload-photo-button {
-    width: 80px;
-    height: 33px;
-    text-anchor: middle;
-    text-align: center;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    margin: 0 auto;
-    margin-bottom: 5px;
-    margin-top: 10px;
-}
 
 #profile-name {
     margin: 0 auto;
     padding-top: 5px;
 }
 
-.container{
+ .container{
 
 
         width: 400px;
         overflow: auto;
-        /* margin-top: 20px; */
+        margin-top: 20px;
         margin-bottom: auto;
         background: #ffffff;
         position: relative;
@@ -55,11 +32,11 @@ button {
         -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 5px;
-        overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+        overflow-y: hidden; 
+    overflow-x: hidden; 
 
     
-}
+} 
 
 .glyphicon {  margin-bottom: 10px;margin-right: 10px;}
 
@@ -76,14 +53,13 @@ button {
 
 }
 
-
-/* small {
+ small {
 display: contents;
 line-height: 1.428571429;
 color: #909597;
 width: 100px;
 
-} */
+} 
 
 .TextBox{
     text-align: center;
@@ -111,16 +87,11 @@ textarea{
     padding: 10px;
 }
 
-label {
-    
-    font-weight: bold;
-    margin: 0 auto;
 
-}
 
 .row {
 
-    /* padding-bottom: 20px;*/
+    padding-bottom: 20px;
     padding-top: px; 
     width: 410px;
     
@@ -171,4 +142,82 @@ p {
     background: #c0392b;
     color: #fff;
    
+} */
+
+.note
+{
+    text-align: center;
+    height: 80px;
+    background: crimson;
+    color: #fff;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.form-content
+{
+    height: auto;
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    text-align: center;  
+
+}
+.form-control{
+    border-radius:1.5rem;
+    margin: 0 auto;
+}
+.btnSubmit
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background: #c0392b;
+    color: #fff;
+   
+}
+
+#profile-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 300px;
+    border: 3px solid red;
+    margin: 0 auto;
+    
+}
+
+#upload-photo-button {
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 80px;
+    height: 33px;
+    text-anchor: middle;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+label {
+    
+    font-weight: bold;
+    padding-left: 20px;
+
 }
