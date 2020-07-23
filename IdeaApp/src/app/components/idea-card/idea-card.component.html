@@ -1,14 +1,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <app-navbar></app-navbar>
-<div class="container h-100">
-    <div class=" justify-content-center d-flex">
+<div class="container h-100 justify-content-center d-flex align-items-center">
+    <div>
         <!-- Only visible when out of ideas -->
         <div id="outofIdeas" class="card" hidden>
             <p>You are out of new ideas for now :( Come back in 24:00hr's to see more! </p>
         </div>
         <!-- Only visible when not out of idea -->
         <div class="card" id="cardcontent">
-            <img id="imgidea" src="{{ cardservice.cards[0].picture }}">
+            <div class="card-body">
+            <img id="imgidea" class="img-fluid" src="{{ cardservice.cards[0].picture }}">
             <!-- <img id="imgidea" src="{{ cardservice.cards[cardservice.index].picture != '' ? cardservice.cards[cardservice.index].picture : '' }}"
                 class="img-fluid" /> -->
             <div class="row">
@@ -47,5 +48,6 @@
 
             </div>
         </div>
+    </div>
     </div>
 </div>

@@ -37,20 +37,14 @@ import { LikedCardsComponent } from './components/liked-cards/liked-cards.compon
     IdeaCardDetailsComponent,
     OtherUserProfilePageComponent,
     NavbarComponent,
-<<<<<<< HEAD
-    OutOfCardsComponent,
-    LikedCardsComponent,
-    // SummernoteComponent
-=======
     OutOfCardsComponent
->>>>>>> 288854e226e017950e688c9c32b0117c931f83e2
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    AngularFileUploaderModule
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
