@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Profiles } from '../../Models/Mock-Profiles';
 import { Router } from '@angular/router';
 import { ProfileService } from '../../services/profile.service';
-import {CardServiceService} from 'src/app/services/card-service.service';
+import { CardServiceService } from 'src/app/services/card-service.service';
+import { ProfileCreationService } from '../../services/profile-creation.service';
 
 @Component({
   selector: 'app-other-user-profile-page',
@@ -12,11 +13,12 @@ import {CardServiceService} from 'src/app/services/card-service.service';
 export class OtherUserProfilePageComponent implements OnInit {
   public length:number = 0;
    
-  constructor(private router: Router, public profileService: ProfileService, public cardservice: CardServiceService) { }
+  constructor(private router: Router, public profileService: ProfileService, public cardservice: CardServiceService, public profilecreationservice: ProfileCreationService) { }
 
   ngOnInit(): void {  }
 
   outOfCards(){
+    this.profilecreationservice.currentCard = null; 
     this.router.navigate(['/out-of-cards']);
   }
 

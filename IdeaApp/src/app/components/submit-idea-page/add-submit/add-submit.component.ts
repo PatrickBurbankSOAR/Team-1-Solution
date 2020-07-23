@@ -63,12 +63,13 @@ export class AddSubmitComponent implements OnInit {
     tempCard.title = this.title;
     tempCard.description = this.description; 
     tempCard.tags = this.tags;
+    tempCard.picture = "assets/images/finance.jpg";
     
     this.profilecreationservice.myIdeaCards(tempCard);
 
     this.addideaservice.saveIdea(this.title);
 
-    console.log("Successfully submitted ", this.timestamp, tempCard.title, this.description, tempCard.tags);
+    //console.log("Successfully submitted ", this.timestamp, tempCard.title, this.description, tempCard.tags);
 
     //Clear form
     this.title = this.description = '';
@@ -79,6 +80,7 @@ export class AddSubmitComponent implements OnInit {
 
   
   outOfCards(){
+    this.profilecreationservice.currentCard = null; 
     this.router.navigate(['/out-of-cards']);
   }
 

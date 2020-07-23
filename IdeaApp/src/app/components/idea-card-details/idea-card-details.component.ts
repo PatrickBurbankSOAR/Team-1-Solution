@@ -34,6 +34,8 @@ export class IdeaCardDetailsComponent implements OnInit {
   gotoIdeaCard(): void {
     this.profilecreationservice.currentCard = null; 
     this.length = this.cardservice.cards.length;
+    console.log("length: ", this.length);
+    console.log("index: ", this.cardservice.index);
     if (this.length > this.cardservice.index) {
       this.router.navigate(['/idea-card'])
     }

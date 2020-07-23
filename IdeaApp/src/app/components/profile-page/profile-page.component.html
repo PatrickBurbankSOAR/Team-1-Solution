@@ -74,15 +74,15 @@
 
                     <div class="row"><label>My Ideas:</label></div>
                     <ul>
-                        <li *ngFor="let Card of profilecreationservice.myCards"(click) = "gotoMoreDetails(Card);">
+                        <a *ngFor="let Card of profilecreationservice.myCards"(click) = "gotoMoreDetails(Card);">
                             <span>{{Card.title}}</span>
-                        </li>
+                        </a>
                     </ul>
 
                         <div class="row"><label>Liked Ideas:</label></div>
                         <ul>
                             <a *ngFor="let Card of profilecreationservice.likedCards" (click)=gotoMoreDetails(Card);>
-                                <span>{{ Card.title }} </span>
+                                <p>{{ Card.title }} </p>
                             </a>
 
                     </ul>

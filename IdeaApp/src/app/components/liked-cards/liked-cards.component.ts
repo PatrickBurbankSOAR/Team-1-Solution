@@ -17,6 +17,7 @@ export class LikedCardsComponent implements OnInit {
   }
 
   outOfCards(){
+    this.profilecreationservice.currentCard = null; 
     this.router.navigate(['/out-of-cards']);
   }
 
