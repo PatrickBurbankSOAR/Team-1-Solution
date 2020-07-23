@@ -1,24 +1,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <app-navbar></app-navbar>
-<div class="container h-100">
-    <div class=" justify-content-center d-flex">
+<div class="container h-100 justify-content-center d-flex align-items-center">
+    <div>
         <!-- Only visible when out of ideas -->
         <div id="outofIdeas" class="card" hidden>
             <p>You are out of new ideas for now :( Come back in 24:00hr's to see more! </p>
         </div>
         <!-- Only visible when not out of idea -->
         <div class="card" id="cardcontent">
-
-            <img id="imgidea" src="{{ cardservice.cards[0].picture != '' ? cardservice.cards[0].picture : '' }}"
-                class="img-fluid" />
-            <!--LEFT AND RIGHT BUTTONS-->
-            <!-- <div class="carousel-control-prev" data-slide="prev" (click)="goToPreviousCard()">
-                            <span class="carousel-control-prev-icon"></span>
-                        </div> 
-                
-                        <div class="carousel-control-next" data-slide="next" (click)="goToNextCard()">
-                            <span class="carousel-control-next-icon"></span>
-                        </div> -->
+            <div class="card-body">
+            <img id="imgidea" class="img-fluid" src="{{ cardservice.cards[0].picture }}">
+            <!-- <img id="imgidea" src="{{ cardservice.cards[cardservice.index].picture != '' ? cardservice.cards[cardservice.index].picture : '' }}"
+                class="img-fluid" /> -->
             <div class="row">
                 <div class="col">
 
@@ -37,7 +30,7 @@
                     <p class="h4 font-weight-bold text-uppercase" id="title"> {{cardservice.cards[0].title}}</p>
                 </div>
                 <div class="row">
-                    <p>{{cardservice.cards[0].description.substring(0,20)}}...</p>
+                    <p>{{cardservice.cards[0].description.substring(0,40)}}...</p>
                 </div>
 
                 
@@ -55,5 +48,6 @@
 
             </div>
         </div>
+    </div>
     </div>
 </div>

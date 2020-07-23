@@ -1,0 +1,38 @@
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container h-100 w-100" style="background-color: crimson;">
+    <div class="d-flex justify-content-center h-60">
+	<!-- <div class="row"> -->
+		<!-- <div class="col-sm-6 col-md-4 col-lg-3 mt-4"> -->
+            
+                <div class="card">
+
+                    <!--This is the header image-->
+                    <img class="card-img-top" src="{{ profilecreationservice.pic }}">
+
+                    <div class="card-block">
+                        <figure class="profile"></figure>
+
+                        <!--Idea Title-->
+                        <h4 class="card-title mt-3">{{profilecreationservice.title}}</h4>
+
+                        <!--Idea Description-->
+                        <div class="card-text">{{profilecreationservice.desc}}</div>
+
+                        <!--Contact Information-->                    
+                        <div class="card-text">Contact: {{profilecreationservice.contact}}</div>
+
+                        <!--Idea Tags-->
+                        <div class="card-text">Tags: {{profilecreationservice.tags}}</div>
+
+                    </div>
+                    <a router="register-page" class="ml-2" class="btn btn-primary" routerLinkActive="active" (click)="gotoUserProfile()"> Contact: {{ profileservice.profiles[0].name }}</a>
+                    <a router="register-page" class="ml-2" class="btn btn-primary" routerLinkActive="active" (click)="gotoIdeaCard()">Back</a>
+
+                    </div>
+                <!-- </div> -->
+            <!-- </div> -->
+        </div>
+	</div>

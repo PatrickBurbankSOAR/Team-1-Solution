@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
+import { Card } from '../Models/card-info';
+import { TitleCasePipe } from '@angular/common';
 
 @Injectable({
   providedIn: 'root'
@@ -12,9 +14,27 @@ export class ProfileCreationService {
   private email;
   private phone;
   private bio;
-  private tags;
+  //private tags;
+
+  public id;
+  public pic;
+  public title;
+  public desc;
+  public contact;
+  public tags;
+
+  public likedCards: Card[] = [];
+  
+
+addCard(card: Card){
+  this.likedCards.push(card);
+  console.log("liked card: ", this.likedCards);
+}
 
 
+viewLikedCards(){
+  return this.likedCards;
+}
 
 saveInfo(name, email, phone, bio, tags) {
 

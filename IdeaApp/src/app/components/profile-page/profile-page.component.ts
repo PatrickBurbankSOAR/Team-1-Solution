@@ -40,7 +40,7 @@ export class ProfilePageComponent implements OnInit {
   public length:number = 0;
 
 
-  constructor(private router: Router, private addideaservice: AddIdeaService, private likesservice: LikesService, private profilecreationservice: ProfileCreationService, public cardservice: CardServiceService) {
+  constructor(private router: Router, private addideaservice: AddIdeaService, private likesservice: LikesService, public profilecreationservice: ProfileCreationService, public cardservice: CardServiceService) {
 
 
     
@@ -101,8 +101,9 @@ export class ProfilePageComponent implements OnInit {
   }
 
 
-  gotoIdeaDetails() {
-    this.router.navigate(['/idea-card-details']);
+  gotoLikedIdeas() {
+    this.router.navigate(['/liked-cards']);
+    
   }
 
 

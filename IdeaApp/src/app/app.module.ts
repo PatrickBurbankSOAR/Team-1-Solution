@@ -17,7 +17,13 @@ import { IdeaCardDetailsComponent } from './components/idea-card-details/idea-ca
 import { OtherUserProfilePageComponent } from './components/other-user-profile-page/other-user-profile-page.component'
 import { NavbarComponent } from './navbar/navbar.component';
 import { OutOfCardsComponent } from './components/out-of-cards/out-of-cards.component';
+<<<<<<< HEAD
  import { AngularFileUploaderModule } from "angular-file-uploader";
+=======
+import { LikedCardsComponent } from './components/liked-cards/liked-cards.component';
+// import { AngularFileUploaderModule } from 'angular-file-uploader';
+
+>>>>>>> 7aedf3aa3e9c25c825aac386f43daab24bf5d964
 
 @NgModule({
   declarations: [
@@ -35,14 +41,15 @@ import { OutOfCardsComponent } from './components/out-of-cards/out-of-cards.comp
     IdeaCardDetailsComponent,
     OtherUserProfilePageComponent,
     NavbarComponent,
-    OutOfCardsComponent
-    
+    OutOfCardsComponent,
+    LikedCardsComponent
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    AngularFileUploaderModule
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

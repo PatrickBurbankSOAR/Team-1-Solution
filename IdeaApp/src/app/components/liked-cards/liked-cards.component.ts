@@ -1,22 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-// import { Card } from 'src/app/Models/card-info'
-// import { CARDSTACK } from 'src/app/Models/mock-cards';
 import { Router } from '@angular/router';
 import {CardServiceService} from 'src/app/services/card-service.service';
 import { ProfileService } from '../../services/profile.service';
+import { ProfileCreationService } from '../../services/profile-creation.service';
 
 @Component({
-  selector: 'app-idea-card-details',
-  templateUrl: './idea-card-details.component.html',
-  styleUrls: ['./idea-card-details.component.css']
+  selector: 'app-liked-cards',
+  templateUrl: './liked-cards.component.html',
+  styleUrls: ['./liked-cards.component.css']
 })
-export class IdeaCardDetailsComponent implements OnInit {
-  // cards = CARDSTACK; 
-  //public index:number = 0;
+export class LikedCardsComponent implements OnInit {
+
+  constructor(private router: Router, public cardservice: CardServiceService, public profileservice: ProfileService, public profilecreationservice: ProfileCreationService) { }
   public length:number = 0;
-
-  constructor(private router: Router, public cardservice: CardServiceService, public profileservice: ProfileService) { }
-
   ngOnInit(): void {
   }
 
@@ -40,5 +36,6 @@ export class IdeaCardDetailsComponent implements OnInit {
   {
     this.router.navigate(['/other-user-page'])
   }
+
 
 }
