@@ -46,16 +46,13 @@ export class IdeaCardComponent implements OnInit {
     this.profileService.shiftProfile();
     this.length = this.cardservice.cards.length;
     if (this.length > 1) {
-      console.log(this.length);
+      //console.log(this.length);
       this.cardservice.shiftCard();
     }
     else {
       console.log("End of array");
       this.outOfCards()
     }
-
-
-    console.log(this.length);
   }
 
   likeCard() {
@@ -67,7 +64,7 @@ export class IdeaCardComponent implements OnInit {
 
     this.length = this.cardservice.cards.length;
     if (this.length > 1) {
-      console.log(this.length);
+      //console.log(this.length);
       this.cardservice.shiftCard();
     }
     else {
