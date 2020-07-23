@@ -10,6 +10,7 @@ import { IdeaCardComponent } from '../app/components/idea-card/idea-card.compone
 import { IdeaCardDetailsComponent} from '../app/components/idea-card-details/idea-card-details.component';
 import { OtherUserProfilePageComponent } from '../app/components/other-user-profile-page/other-user-profile-page.component';
 import { OutOfCardsComponent } from '../app/components/out-of-cards/out-of-cards.component';
+import { LikedCardsComponent } from '../app/components/liked-cards/liked-cards.component';
 
 const routes: Routes = [
   { path: '', component: LoginPageComponent },
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'idea-card', component: IdeaCardComponent },
   { path: 'idea-card-details', component: IdeaCardDetailsComponent },
   { path: 'other-user-page', component: OtherUserProfilePageComponent },
-  { path: 'out-of-cards', component: OutOfCardsComponent}
+  { path: 'out-of-cards', component: OutOfCardsComponent},
+  { path: 'liked-cards', component: LikedCardsComponent}
 
 ];
 

@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Profiles } from '../Models/Mock-Profiles';
 
-
-
 @Injectable({
   providedIn: 'root'
 })

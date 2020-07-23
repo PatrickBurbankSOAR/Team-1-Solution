@@ -10,22 +10,22 @@
                 <div class="card">
 
                     <!--This is the header image-->
-                    <img class="card-img-top" src="{{ cardservice.cards[0].picture }}">
+                    <img class="card-img-top" src="{{ profilecreationservice.pic }}">
 
                     <div class="card-block">
                         <figure class="profile"></figure>
 
                         <!--Idea Title-->
-                        <h4 class="card-title mt-3">{{cardservice.cards[0].title}}</h4>
+                        <h4 class="card-title mt-3">{{profilecreationservice.title}}</h4>
 
                         <!--Idea Description-->
-                        <div class="card-text">{{cardservice.cards[0].description}}</div>
+                        <div class="card-text">{{profilecreationservice.desc}}</div>
 
                         <!--Contact Information-->                    
-                        <div class="card-text">Contact: {{cardservice.cards[0].contact}}</div>
+                        <div class="card-text">Contact: {{profilecreationservice.contact}}</div>
 
                         <!--Idea Tags-->
-                        <div class="card-text">Tags: {{cardservice.cards[0].tags}}</div>
+                        <div class="card-text">Tags: {{profilecreationservice.tags}}</div>
 
                     </div>
                     <a router="register-page" class="ml-2" class="btn btn-primary" routerLinkActive="active" (click)="gotoUserProfile()"> Contact: {{ profileservice.profiles[0].name }}</a>
