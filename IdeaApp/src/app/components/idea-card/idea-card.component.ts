@@ -17,7 +17,6 @@ import { ProfileService } from '../../services/profile.service';
 export class IdeaCardComponent implements OnInit {
   cards = CARDSTACK; 
   ideas: string[] = [];
-
   public length:number = 0;
   public index:number = 0;
   // int length = Array.getLength(cards);
@@ -38,7 +37,14 @@ export class IdeaCardComponent implements OnInit {
   }
 
   outOfCards(){
-    this.router.navigate(['/out-of-cards']);
+    this.cards[0].id = 0;
+    this.cards[0].title = "";
+    this.cards[0].description = "";
+    this.cards[0].picture = "";
+    this.cards[0].tags = "";
+    document.getElementById("cardcontent").hidden = true;
+    document.getElementById("outofIdeas").hidden = false;
+
   }
 
   nextCard() {
@@ -48,18 +54,14 @@ export class IdeaCardComponent implements OnInit {
     if (this.length > 1) {
       console.log(this.length);
       this.cardservice.shiftCard();
-    }
-    else {
+    } else {
       console.log("End of array");
-      this.outOfCards()
+      this.outOfCards();
     }
-
-
     console.log(this.length);
   }
 
   likeCard() {
-    
     const name = this.cardservice.cards[this.index].title;
     console.log(name)
     this.ideas.push(name);
@@ -69,11 +71,9 @@ export class IdeaCardComponent implements OnInit {
     if (this.length > 1) {
       console.log(this.length);
       this.cardservice.shiftCard();
-    }
-    else {
+    } else {
         console.log("End of array");
-        this.outOfCards()
+        this.outOfCards();
     }
-
   }
 }

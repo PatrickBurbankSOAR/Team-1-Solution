@@ -16,7 +16,8 @@ import { RegistrationMainPageComponent } from './components/register-page/regist
 import { IdeaCardDetailsComponent } from './components/idea-card-details/idea-card-details.component';
 import { OtherUserProfilePageComponent } from './components/other-user-profile-page/other-user-profile-page.component'
 import { NavbarComponent } from './navbar/navbar.component';
-import { OutOfCardsComponent } from './components/out-of-cards/out-of-cards.component'
+import { OutOfCardsComponent } from './components/out-of-cards/out-of-cards.component';
+import { SummernoteComponent } from './components/summernote/summernote.component'
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { OutOfCardsComponent } from './components/out-of-cards/out-of-cards.comp
     IdeaCardDetailsComponent,
     OtherUserProfilePageComponent,
     NavbarComponent,
-    OutOfCardsComponent
+    OutOfCardsComponent,
+    SummernoteComponent
     
   ],
   imports: [
