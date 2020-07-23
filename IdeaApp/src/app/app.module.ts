@@ -38,16 +38,14 @@ import { AngularFileUploaderModule } from 'angular-file-uploader';
     OtherUserProfilePageComponent,
     NavbarComponent,
     OutOfCardsComponent,
-  
     LikedCardsComponent
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFileUploaderModule,
-    FormsModule
-    
+    FormsModule,
+    AngularFileUploaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

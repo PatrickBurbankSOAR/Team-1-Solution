@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {CardServiceService} from 'src/app/services/card-service.service';
 import { ProfileService } from '../../services/profile.service';
+import { ProfileCreationService } from 'src/app/services/profile-creation.service';
 
 @Component({
   selector: 'app-idea-card-details',
@@ -15,16 +16,18 @@ export class IdeaCardDetailsComponent implements OnInit {
   //public index:number = 0;
   public length:number = 0;
 
-  constructor(private router: Router, public cardservice: CardServiceService, public profileservice: ProfileService) { }
+  constructor(private router: Router, public cardservice: CardServiceService, public profileservice: ProfileService, public profilecreationservice: ProfileCreationService) { }
 
   ngOnInit(): void {
   }
 
   outOfCards(){
+    this.profilecreationservice.currentCard = null; 
     this.router.navigate(['/out-of-cards']);
   }
 
   gotoIdeaCard(): void {
+    this.profilecreationservice.currentCard = null; 
     this.length = this.cardservice.cards.length;
     if (this.length > this.cardservice.index) {
       this.router.navigate(['/idea-card'])
@@ -38,6 +41,7 @@ export class IdeaCardDetailsComponent implements OnInit {
 
   gotoUserProfile()
   {
+    this.profilecreationservice.currentCard = null; 
     this.router.navigate(['/other-user-page'])
   }
 

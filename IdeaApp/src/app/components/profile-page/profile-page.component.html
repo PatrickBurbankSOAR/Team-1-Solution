@@ -86,10 +86,15 @@
                     <!-- <a router="register-page" class="ml-2" style="cursor: pointer; color:blue" routerLinkActive="active"
                         (click)="gotoLikedIdeas()">{{createdItem}}</a> -->
             
-                        <div class="row"><label>Liked Ideas:</label></div>
-                    <a router="register-page" class="ml-2" style="cursor: pointer; color:blue" text-align="center" routerLinkActive="active"
-                        (click)="gotoLikedIdeas()">{{likedItem}}</a>
 
+                        <div class="row"><label>Liked Ideas:</label></div>
+                        <ul>
+                            <a *ngFor="let Card of profilecreationservice.likedCards" (click)=gotoMoreDetails(Card);>
+                                <span>{{ Card.title }} </span>
+                            </a>
+                        <!-- <a router="register-page" class="ml-2" style="cursor: pointer; color:blue" text-align="center" routerLinkActive="active"
+                        (click)="gotoLikedIdeas()">{{likedItem}}</a> -->
+                    </ul>
                 </div>
 
             </div>
