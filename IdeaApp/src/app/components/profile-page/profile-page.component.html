@@ -1,79 +1,78 @@
 <app-navbar></app-navbar>
 
-<div class="container" id="container">
+<form class="form">
+    <div class="container register-form">
+        <div class="d-flex justify-content-center">
+            <div class="form">
+                <div class="note">
+                    <p>My Profile</p>
+                </div>
 
-    <img class="img-circle" id="profile-img" src="assets/images/profilePicture.jpg" />
+                <br>
 
+                <div class="row"><img class="img-circle" id="profile-img" src="assets/images/profilePicture.jpg" />
+                </div>
 
+                <div class="row"><button id="upload-photo-button" class="btn login_btn">Upload</button></div>
 
-    <button id="upload-photo-button" class="btn login_btn">Upload</button>
-
-
-
-
-    <!--Username-->
-    <h4 id="profile-name">{{name}} </h4>
-
-    <br>
-
-    <p>
-
-
-        <!--User's e-mail-->
-        <label>E-mail:</label>
-        <input class="form-control input_user" value={{email}} />
+                <h4 id="profile-name">{{name}} </h4>
 
 
-        <br />
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+
+                            <!--Email-->
+                            <label>E-mail:</label>
+                            <input type="text" class="form-control" value={{email}} style="width: 300px;" />
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <!--Phone-->
+                            <label>Phone:</label>
+                            <input type="text" class="form-control" value={{phone}} style="width: 300px;" />
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <!--Bio-->
+                            <label>About Me:</label>
+                            <textarea class="form-control input_user" id="bio-text" value={{bio}}
+                                style="width: 300px"></textarea>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button type="button" class="btnSubmit" (click)="saveChanges()">Save Changes</button>
+                </div>
+
+                <div class="row">
+                    <button type="button" class="btnSubmit" (click)="gotoIdeaPage()">Go Back</button>
+                </div>
+
+                <div class="row">
+                    <label>My Ideas:</label>
+                    <a router="register-page" class="ml-2" style="cursor: pointer; color:blue" routerLinkActive="active"
+                        (click)="gotoIdeaDetails()">{{createdItem}}</a>
+                </div>
+
+                <div class="row">
+                    <label>Liked Ideas:</label>
+                    <a router="register-page" class="ml-2" style="cursor: pointer; color:blue" routerLinkActive="active"
+                        (click)="gotoIdeaDetails()">{{likedItem}}</a>
+
+                </div>
 
 
-
-        <!--User's phone number-->
-        <label>Phone:</label>
-        <input class="form-control input_user" value={{phone}}>
-
-
-        <br>
-
-        <!--User's bio section-->
-        <label>About Me:</label>
-        <br>
-
-        <textarea class="form-control input_user" id="bio-text" value={{bio}}></textarea>
-
-
-
-    <div class="row">
-
-
-
-        <!--Save changes button-->
-        <button type="button" class="btn btn-primary" routerLinkActive="active" (click)="gotoIdeaPage()">Save
-            Changes</button>
-        <br>
-        <!--Back button-->
-        <button router="register-page" class="btn btn-primary" routerLinkActive="active" (click)="gotoIdeaPage()">Go
-            back</button>
-
-        <br>
-
-
-
-
+            </div>
+        </div>
     </div>
-
-
-    <label>My Ideas:</label>
-
-    <!--user ideas-->
-    <!-- <p id="created">{{createdItem}}</p> -->
-    <a router="register-page" class="ml-2" style="cursor: pointer; color:blue" routerLinkActive="active" (click)="gotoIdeaDetails()">{{createdItem}}</a>
-
-
-    <label>Liked Ideas:</label>
-
-    <!--liked ideas-->
-    <a router="register-page" class="ml-2" style="cursor: pointer; color:blue" routerLinkActive="active" (click)="gotoIdeaDetails()">{{likedItem}}</a>
-
-
-</div>
+</form>
