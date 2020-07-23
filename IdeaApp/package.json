@@ -20,6 +20,7 @@
     "@angular/platform-browser-dynamic": "~10.0.4",
     "@angular/router": "~10.0.4",
     "rxjs": "~6.5.5",
+    "summernote": "^0.8.18",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },
@@ -29,6 +30,7 @@
     "@angular/compiler-cli": "~10.0.4",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/jquery": "^3.5.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.5.0",
