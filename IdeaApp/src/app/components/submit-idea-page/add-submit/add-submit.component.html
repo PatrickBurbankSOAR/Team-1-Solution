@@ -1,6 +1,6 @@
 <!-- Title, description, timestamp, tags, image/video (optional) -->
 <form class = "form">
-<div class="container register-form">
+<div class="container register-form" style="margin-top: 20px;">
     <div class="d-flex justify-content-center">
             <div class="form">
                 <div class="note">
@@ -20,22 +20,25 @@
                                 ([ngModel])="description" style="height: 200px; width: 300px;"/>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Eventual Image/video maybe" value="" name="media" 
-                                [(ngModel)]="tags" style="width:300px" />
+                                <angular-file-uploader 
+                                [config]="afuConfig"
+                                >
+                          </angular-file-uploader>
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Add tags" value="" name="tags" 
-                                [(ngModel)]="tags" style="width: 300px"/>
+                                [(ngModel)]="tags" style="width: 200%"/>
                             </div>
                         </div>
                         <div class="col-md-6">
+
                         </div>
                     </div>
-                    <button type="button" class="btnSubmit" (click)="onSubmit()">Submit</button>
-                    <button type="button" class="btnSubmit" (click)="gotoIdeaPage()">Go back</button>
+                    <button type="button" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+                    <button type="button" class="btn btn-primary" (click)="gotoIdeaPage()">Go back</button>
                 </div>
             </div>
         </div>
     </div>
-    </form>
+</form>
     
