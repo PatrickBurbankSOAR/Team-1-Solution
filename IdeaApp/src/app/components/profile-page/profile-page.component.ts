@@ -97,8 +97,6 @@ export class ProfilePageComponent implements OnInit {
         this.outOfCards()
     }
   }
-  
-
 
 
   gotoIdeaDetails() {

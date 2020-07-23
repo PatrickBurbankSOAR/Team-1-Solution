@@ -17,7 +17,7 @@ import { IdeaCardDetailsComponent } from './components/idea-card-details/idea-ca
 import { OtherUserProfilePageComponent } from './components/other-user-profile-page/other-user-profile-page.component'
 import { NavbarComponent } from './navbar/navbar.component';
 import { OutOfCardsComponent } from './components/out-of-cards/out-of-cards.component';
-import { SummernoteComponent } from './components/summernote/summernote.component'
+// import { SummernoteComponent } from './components/summernote/summernote.component'
 
 @NgModule({
   declarations: [
@@ -36,7 +36,7 @@ import { SummernoteComponent } from './components/summernote/summernote.componen
     OtherUserProfilePageComponent,
     NavbarComponent,
     OutOfCardsComponent,
-    SummernoteComponent
+    // SummernoteComponent
     
   ],
   imports: [

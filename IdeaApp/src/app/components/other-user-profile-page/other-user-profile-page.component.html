@@ -2,7 +2,7 @@
     <img class="img-circle" id="profile-img" src="assets/images/profilePicture.jpg" />
     <button id="upload-photo-button" class="btn login_btn">Upload</button>
         <!--Username-->
-    <h4 id="profile-name">{{ profileService.profiles[0].name }} </h4>
+    <h4 id="profile-name">{{profileService.profiles[0].name}} </h4>
     <br>
     <p>
         <!--User's e-mail-->
@@ -33,9 +33,9 @@
     </div>
 
 
-    <label> 's Ideas:</label>
+    <label> {{ profileService.profiles[0].name }}'s Ideas:</label>
 
     <!--user ideas-->
-    <p>USER IDEAS WILL GO HERE</p>
+    <p>{{cardservice.cards[0].title}}</p>
 
 </div>
