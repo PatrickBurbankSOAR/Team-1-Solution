@@ -18,6 +18,7 @@ export class AddRegistrationComponent implements OnInit {
   phone:string;
   bio:string;
   password:string;
+  tags:string;
   
   constructor(private router: Router, private profilecreationservice: ProfileCreationService) { }
 
@@ -31,7 +32,7 @@ export class AddRegistrationComponent implements OnInit {
 
     console.log(this.name)
 
-    this.profilecreationservice.saveInfo(this.name, this.email, this.phone, this.bio);
+    this.profilecreationservice.saveInfo(this.name, this.email, this.phone, this.bio, this.tags);
 
     this.router.navigate(['/submit-idea-page']);
     
