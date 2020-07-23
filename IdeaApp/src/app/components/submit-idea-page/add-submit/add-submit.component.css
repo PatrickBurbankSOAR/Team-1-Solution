@@ -41,3 +41,9 @@
     color: #fff;
    
 }
+
+::ng-deep angular-file-uploader button.btn-info {
+    border: 1px solid blue;
+    background-color: coral;
+
+}
