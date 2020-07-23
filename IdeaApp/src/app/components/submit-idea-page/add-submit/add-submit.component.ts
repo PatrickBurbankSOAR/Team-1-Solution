@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AddIdeaService } from 'src/app/services/add-idea.service'
+import { Card } from 'src/app/Models/card-info';
 import { CardServiceService } from 'src/app/services/card-service.service';
+import { ProfileCreationService } from 'src/app/services/profile-creation.service';
 
 
 @Component({
@@ -51,22 +53,22 @@ export class AddSubmitComponent implements OnInit {
   timestamp: Date = new Date();
   public length:number = 0;
 
-  constructor(private router: Router, private addideaservice: AddIdeaService,  public cardservice: CardServiceService) { }
+  constructor(private router: Router, private addideaservice: AddIdeaService,  public cardservice: CardServiceService, public profilecreationservice: ProfileCreationService) { }
 
   ngOnInit(): void {
   }
 
   onSubmit() {
+    var tempCard = new Card;
+    tempCard.title = this.title;
+    tempCard.description = this.description; 
+    tempCard.tags = this.tags;
+    
+    this.profilecreationservice.myIdeaCards(tempCard);
 
     this.addideaservice.saveIdea(this.title);
 
-    console.log("Successfully submitted " + this.timestamp);
-    // const profile = {
-    //   title: this.title,
-    //   description: this.description,
-    //   tags:this.contact
-
-    // }
+    console.log("Successfully submitted ", this.timestamp, tempCard.title, this.description, tempCard.tags);
 
     //Clear form
     this.title = this.description = '';

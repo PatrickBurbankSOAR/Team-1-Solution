@@ -18,7 +18,7 @@ import { OtherUserProfilePageComponent } from './components/other-user-profile-p
 import { NavbarComponent } from './navbar/navbar.component';
 import { OutOfCardsComponent } from './components/out-of-cards/out-of-cards.component';
 import { LikedCardsComponent } from './components/liked-cards/liked-cards.component';
-// import { AngularFileUploaderModule } from 'angular-file-uploader';
+import { AngularFileUploaderModule } from 'angular-file-uploader';
 
 
 @NgModule({
@@ -38,12 +38,14 @@ import { LikedCardsComponent } from './components/liked-cards/liked-cards.compon
     OtherUserProfilePageComponent,
     NavbarComponent,
     OutOfCardsComponent,
+  
     LikedCardsComponent
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AngularFileUploaderModule,
     FormsModule
     
   ],
