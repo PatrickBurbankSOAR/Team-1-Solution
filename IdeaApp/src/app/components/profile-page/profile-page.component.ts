@@ -110,5 +110,9 @@ export class ProfilePageComponent implements OnInit {
     
   }
 
+  gotoMoreDetails(){
+    this.router.navigate(['/idea-card-details'])
+  }
+
 
 }
