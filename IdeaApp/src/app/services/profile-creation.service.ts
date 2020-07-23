@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -23,11 +24,11 @@ saveInfo(name, email, phone, bio) {
 
 }
 
-updateInfo(email, phone, bio) {
+updateInfo(email): Observable<String> {
 
-  this.email = email;
-  this.phone = phone;
-  this.bio = bio;
+  return of(email);
+  // this.phone = phone;
+  // this.bio = bio;
 }
 
 fetchName() { 

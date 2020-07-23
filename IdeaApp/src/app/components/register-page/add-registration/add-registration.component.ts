@@ -31,7 +31,7 @@ export class AddRegistrationComponent implements OnInit {
 
     console.log(this.name)
 
-    this.profilecreationservice.updateInfo(this.email, this.phone, this.bio);
+    this.profilecreationservice.saveInfo(this.name, this.email, this.phone, this.bio);
 
     this.router.navigate(['/submit-idea-page']);
     
