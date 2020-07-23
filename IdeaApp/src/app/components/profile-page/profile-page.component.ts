@@ -41,10 +41,7 @@ export class ProfilePageComponent implements OnInit {
   public length:number = 0;
 
 
-  constructor(private router: Router, private addideaservice: AddIdeaService, private likesservice: LikesService, public profilecreationservice: ProfileCreationService, public cardservice: CardServiceService) {
-
-
-    
+  constructor(private router: Router, private addideaservice: AddIdeaService, private likesservice: LikesService, public profilecreationservice: ProfileCreationService, public cardservice: CardServiceService) { 
   }
 
 
@@ -52,6 +49,7 @@ export class ProfilePageComponent implements OnInit {
     this.profilecreationservice.currentCard = card;
     this.router.navigate(['/idea-card-details/']);
   }
+
   ngOnInit(): void {
 
     //DIsplaying liked item
@@ -109,10 +107,5 @@ export class ProfilePageComponent implements OnInit {
     this.router.navigate(['/liked-cards']);
     
   }
-
-  gotoMoreDetails(){
-    this.router.navigate(['/idea-card-details'])
-  }
-
 
 }
