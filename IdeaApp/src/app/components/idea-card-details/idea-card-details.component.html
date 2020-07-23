@@ -2,24 +2,31 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-<div class="container h-100 w-100">
-    <div class="d-flex justify-content-center h-60">
+<app-navbar></app-navbar>
+
+<div class="container h-100 justify-content-center align-items-center" style="margin-top: 20px; width: 400px;">
+
+    <div>
+        <div class="card container h-100 justify-content-center align-items-center" id="cardcontent">
         <!-- <div class="row"> -->
         <!-- <div class="col-sm-6 col-md-4 col-lg-3 mt-4"> -->
 
-        <div class="card">
+        <!-- <div class="card"> -->
 
             <!--This is the header image-->
-            <img class="card-img-top" src="{{ profilecreationservice.currentCard == null ? cardservice.cards[0].picture : profilecreationservice.currentCard.picture }}">
+            <img class="img-fluid" style="margin-top: 10px;" src="{{ profilecreationservice.currentCard == null ? cardservice.cards[0].picture : profilecreationservice.currentCard.picture }}">
+
 
             <div class="card-block">
-                <figure class="profile"></figure>
+                
 
                 <!--Idea Title-->
                 <h4 class="card-title mt-3">{{ profilecreationservice.currentCard == null ? cardservice.cards[0].title : profilecreationservice.currentCard.title }}</h4>
 
                 <!--Idea Description-->
                 <div class="card-text">{{ profilecreationservice.currentCard == null ? cardservice.cards[0].description : profilecreationservice.currentCard.description }}</div>
+
+                <br>
 
                 <!--Contact Information-->
                 <div class="row">
@@ -36,11 +43,11 @@
 
                 <a router="register-page" class="ml-2" class="btn btn-primary" routerLinkActive="active"
                     (click)="gotoIdeaCard()">Back</a>
+<!-- 
+            </div> -->
 
-            </div>
 
-
-
+        </div>
         <!-- </div>
         </div>
         </div> -->
