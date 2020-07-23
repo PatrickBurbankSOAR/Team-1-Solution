@@ -10,6 +10,8 @@ html {
     --inv: #fff;
     background-color: #dddddd;
     background-image: linear-gradient(-25deg, crimson 0%, #dddddd 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     
 }
 
